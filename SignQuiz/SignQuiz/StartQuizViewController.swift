@@ -43,7 +43,10 @@ class StartQuizViewController: UIViewController {
         performSegue(withIdentifier: "quiz", sender: self)
     }
     
-  
+    @IBAction func backToHomeButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "backToHome", sender: self)
+    }
+    
    
 
 }

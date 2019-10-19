@@ -34,10 +34,8 @@ class EasyViewController: UIViewController {
     @IBAction func addToReview(_ sender: UIButton) {
     }
     
-    @IBAction func revealAnswerButton(_ sender: UIButton) {
-    }
-    
     @IBAction func backButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "backToLevel", sender: self)
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
