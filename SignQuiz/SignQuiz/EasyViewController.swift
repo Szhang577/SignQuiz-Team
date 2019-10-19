@@ -21,34 +21,54 @@ class EasyViewController: UIViewController {
     @IBOutlet weak var answerStatus: UILabel!
     
     override func viewDidLoad() {
-//        let vc = StartQuizViewController(nibName: "StartQuizViewCotnroller" , bundle: nil)
         super.viewDidLoad()
-//        self.quizType = StartQuizViewController.get_quiz_type()
-        
-        // Do quizTypeany additional setup after loading the view.
-        levelLabel?.text = variables.level
+        //levelLabel?.text = variables.level
+        levelLabel?.text = question.answer
+        set_image()
     }
     
     
     //MARK: Actions
     @IBAction func checkAnswerButton(_ sender: UIButton) {
+        if question.check(input: userAnswer.text!){
+            answerStatus.text = "You are correct"
+            reset()
+        }else{
+            answerStatus.text = "Idiot, please try again"
+        }
     }
     @IBAction func addToReview(_ sender: UIButton) {
+       
+        if (variables.reviewWords.firstIndex(of: question.get_question()) != nil){
+            variables.reviewWords.append(question.get_question())
+        }
+        answerStatus.text = "Added to review, the answer is: " + question.answer
     }
     
     @IBAction func revealAnswerButton(_ sender: UIButton) {
+        
     }
     
     @IBAction func backButton(_ sender: UIButton) {
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
+        reset()
     }
     @IBAction func repeatButton(_ sender: UIButton) {
     }
     
     func set_image(){
         var picBank = PictureBank(questionString: question.get_question())
+        print(picBank.toImagesFile()[0])
+        quizImages.image = UIImage(named: picBank.toImagesFile()[0])
+    }
+    
+    func reset(){
+        set_image()
+        question = Question(wordType: variables.level, dic: variables.dictionary)
+        viewDidLoad()
+        userAnswer.text = "Please Enter:"
     }
     
 }

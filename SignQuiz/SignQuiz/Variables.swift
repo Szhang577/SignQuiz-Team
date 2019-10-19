@@ -10,7 +10,7 @@ import Foundation
 
 struct variables{
     static var level = ""
-    final var dictionary = Dictionary()
-    
+    static var dictionary = Dictionary()
+    static var reviewWords : [String] = []
     
 }

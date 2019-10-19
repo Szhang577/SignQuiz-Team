@@ -17,7 +17,7 @@ class PictureBank{
         self.questionString = questionString
         characters = Array(questionString.lowercased())
         for char in characters{
-            images.append("image/" + imageBank[Int((char.asciiValue)!)-97])
+            images.append("Images/" + imageBank[Int((char.asciiValue)!)-97])
         }
     // comment
     }
@@ -30,6 +30,7 @@ class PictureBank{
     }
     
     func toImagesFile() -> [String]{
+        print(images)
         return images
     }
 }
