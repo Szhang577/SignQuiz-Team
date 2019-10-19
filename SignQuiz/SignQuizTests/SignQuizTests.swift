@@ -30,5 +30,14 @@ class SignQuizTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func test_dictionary() {
+        let testDic: Dictionary = Dictionary()
+//        print(testDic.evilWords)
+        print(testDic.get_word(type: "easy"))
+        print(testDic.get_word(type: "normal"))
+        print(testDic.get_word(type: "hard"))
+        print(testDic.get_word(type: "evil"))
+    }
 
 }
