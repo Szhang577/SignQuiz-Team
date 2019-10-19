@@ -18,40 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epr-Z7-vvB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epr-Z7-vvB">
                                 <rect key="frame" x="71" y="503" width="272" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.30149904536629923" green="0.7876302814871281" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="IFt-lh-eIn"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="pQZ-pM-fnq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="tintColor" red="0.97679880112384143" green="1" blue="0.53752002043952563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startQuiz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiB-Bz-TdE"/>
                                     <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tia-dk-9eu"/>
-                                    <segue destination="INl-RP-eag" kind="show" identifier="startQuiz" id="QAa-TG-Gdw"/>
+                                    <segue destination="E9v-C5-97k" kind="show" identifier="startQuiz" id="Vv9-U6-sHk"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-lS-DgO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-lS-DgO">
                                 <rect key="frame" x="71" y="634" width="272" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.3014990454" green="0.78763028150000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TDU-Rq-GaB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Review"/>
-                                <connections>
-                                    <segue destination="lXa-bs-cNP" kind="show" id="jWb-o7-JEc"/>
-                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-uz-nkx">
-                                <rect key="frame" x="364" y="88" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="S7R-P7-GX9"/>
-                                    <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="cwp-pL-nAn"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Af-IME">
-                                <rect key="frame" x="47" y="275" width="320" height="76"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-VE-pDv">
+                                <rect key="frame" x="364" y="112" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-uz-nkx">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="S7R-P7-GX9"/>
+                                            <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="cwp-pL-nAn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Af-IME">
+                                <rect key="frame" x="47" y="275" width="320" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="5oP-xh-WtX"/>
+                                    <constraint firstAttribute="height" constant="88" id="fHb-65-boa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
                                 <color key="textColor" red="0.25570986239999999" green="0.26345226919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -59,7 +70,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdP-uz-nkx" secondAttribute="trailing" id="t3C-zB-UIq"/>
+                            <constraint firstItem="tl6-Af-IME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="0Sb-gz-h8Q"/>
+                            <constraint firstItem="tl6-Af-IME" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="231" id="CW4-Nm-3Pn"/>
+                            <constraint firstItem="tl6-Af-IME" firstAttribute="centerX" secondItem="q7J-lS-DgO" secondAttribute="centerX" id="NTU-1A-1uJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7J-lS-DgO" secondAttribute="bottom" constant="148" id="R2g-GP-aef"/>
+                            <constraint firstItem="q7J-lS-DgO" firstAttribute="top" secondItem="epr-Z7-vvB" secondAttribute="bottom" constant="51" id="R5F-xG-8hd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tl6-Af-IME" secondAttribute="trailing" constant="47" id="WFa-VC-HWB"/>
+                            <constraint firstItem="epr-Z7-vvB" firstAttribute="top" secondItem="tl6-Af-IME" secondAttribute="bottom" constant="140" id="X9W-OG-Xl0"/>
+                            <constraint firstItem="tl6-Af-IME" firstAttribute="centerX" secondItem="epr-Z7-vvB" secondAttribute="centerX" id="acK-Yb-VGw"/>
+                            <constraint firstItem="q7J-lS-DgO" firstAttribute="leading" secondItem="epr-Z7-vvB" secondAttribute="leading" id="k2d-CQ-QM0"/>
+                            <constraint firstItem="q7J-lS-DgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="yGt-lk-KFX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,34 +89,25 @@
             <point key="canvasLocation" x="87" y="-212"/>
         </scene>
         <!--Start Quiz View Controller-->
-        <scene sceneID="tXm-pA-uWL">
+        <scene sceneID="HuH-lu-Vuj">
             <objects>
-                <viewController id="INl-RP-eag" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KRm-WY-Ep9">
+                <viewController id="E9v-C5-97k" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nw5-JS-8kO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-Lc-Ye1">
+                                <rect key="frame" x="87" y="263" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="LHF-OA-FGp"/>
+                        <viewLayoutGuide key="safeArea" id="X36-Uy-QBg"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SqP-AU-66r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aQ-hR-ICD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="-212"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="rNu-bd-vNA">
-            <objects>
-                <viewController id="lXa-bs-cNP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="L0s-TW-DrC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="eQ8-lE-nSc"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BNU-vj-FLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="851" y="443"/>
+            <point key="canvasLocation" x="901" y="-212"/>
         </scene>
     </scenes>
     <resources>
