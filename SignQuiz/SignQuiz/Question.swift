@@ -12,16 +12,15 @@ class Question{
     var answer: String
     var aslPath: String //path to directory asl images
     
-    init(aslPath: String, wordType: String) {
+    init(aslPath: String, wordType: String, dic: Dictionary) {
         // set the aslpath to the filepath
         // randomly generate an answer
         self.aslPath = aslPath
-        self.answer = ""
+        self.answer = dic.get_word(type: wordType)
     }
-    
-    func get_question(){
-        // generate question with asl images correspondanding to answer
-        
+     
+    func get_question(picBank: PictureBank) -> String{
+        return self.answer
     }
     
     func check(input: String) -> Bool {

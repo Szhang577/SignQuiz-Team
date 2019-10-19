@@ -23,6 +23,7 @@
 		63BD5652235BA0BB006E0C44 /* EvilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5651235BA0BB006E0C44 /* EvilViewController.swift */; };
 		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 		A45A496A235B831100ECF36F /* words in Resources */ = {isa = PBXBuildFile; fileRef = A45A4969235B831100ECF36F /* words */; };
+		A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A496B235B8BBE00ECF36F /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		63BD5651235BA0BB006E0C44 /* EvilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilViewController.swift; sourceTree = "<group>"; };
 		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A45A4969235B831100ECF36F /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = words; sourceTree = "<group>"; };
+		A45A496B235B8BBE00ECF36F /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				A45A4969235B831100ECF36F /* words */,
 				4A8E1EFE235B784A0071A21B /* PictureBank.swift */,
 				A45A4967235B75B800ECF36F /* Question.swift */,
+				A45A496B235B8BBE00ECF36F /* Dictionary.swift */,
 				6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */,
 				6371BF81235B58E10088D256 /* Info.plist */,
 				63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */,
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8E1EFF235B784A0071A21B /* PictureBank.swift in Sources */,
+				A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */,
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
 				63BD5650235BA0AF006E0C44 /* HardViewController.swift in Sources */,
 				63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */,
