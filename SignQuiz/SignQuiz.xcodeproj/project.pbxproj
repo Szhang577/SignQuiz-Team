@@ -15,7 +15,7 @@
 		6371BF80235B58E10088D256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */; };
 		6371BF8B235B58E10088D256 /* SignQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371BF8A235B58E10088D256 /* SignQuizTests.swift */; };
 		63BD5644235B7BB3006E0C44 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 63BD5643235B7BB3006E0C44 /* Images */; };
-		63BD5646235B8128006E0C44 /* StartQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5645235B8128006E0C44 /* StartQuizViewController.swift */; };
+		63BD5648235B95CB006E0C44 /* StartQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */; };
 		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 		A45A496A235B831100ECF36F /* words in Resources */ = {isa = PBXBuildFile; fileRef = A45A4969235B831100ECF36F /* words */; };
 		A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A496B235B8BBE00ECF36F /* Dictionary.swift */; };
@@ -44,7 +44,7 @@
 		6371BF8A235B58E10088D256 /* SignQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignQuizTests.swift; sourceTree = "<group>"; };
 		6371BF8C235B58E10088D256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63BD5643235B7BB3006E0C44 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
-		63BD5645235B8128006E0C44 /* StartQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizViewController.swift; sourceTree = "<group>"; };
+		63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizViewController.swift; sourceTree = "<group>"; };
 		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A45A4969235B831100ECF36F /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = words; sourceTree = "<group>"; };
 		A45A496B235B8BBE00ECF36F /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				A45A496B235B8BBE00ECF36F /* Dictionary.swift */,
 				6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */,
 				6371BF81235B58E10088D256 /* Info.plist */,
-				63BD5645235B8128006E0C44 /* StartQuizViewController.swift */,
+				63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
@@ -222,7 +222,7 @@
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
 				6371BF78235B58E10088D256 /* ViewController.swift in Sources */,
 				6371BF76235B58E10088D256 /* AppDelegate.swift in Sources */,
-				63BD5646235B8128006E0C44 /* StartQuizViewController.swift in Sources */,
+				63BD5648235B95CB006E0C44 /* StartQuizViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
