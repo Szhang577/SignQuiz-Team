@@ -29,9 +29,8 @@
                                 <color key="tintColor" red="0.97679880112384143" green="1" blue="0.53752002043952563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="startQuiz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiB-Bz-TdE"/>
-                                    <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tia-dk-9eu"/>
-                                    <segue destination="E9v-C5-97k" kind="show" identifier="startQuiz" id="Vv9-U6-sHk"/>
+                                    <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJd-qw-7ty"/>
+                                    <segue destination="TIe-Hq-ZFl" kind="show" identifier="nextPage" id="5tB-DN-2VP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-lS-DgO">
@@ -51,8 +50,10 @@
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-uz-nkx">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Chq-gf-VqK"/>
                                             <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="S7R-P7-GX9"/>
                                             <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="cwp-pL-nAn"/>
+                                            <constraint firstAttribute="height" constant="50" id="w8w-xl-Aoc"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -89,25 +90,19 @@
             <point key="canvasLocation" x="87" y="-212"/>
         </scene>
         <!--Start Quiz View Controller-->
-        <scene sceneID="HuH-lu-Vuj">
+        <scene sceneID="y2J-c1-cv4">
             <objects>
-                <viewController id="E9v-C5-97k" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nw5-JS-8kO">
+                <viewController id="TIe-Hq-ZFl" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0HP-Oc-WfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6HF-Lc-Ye1">
-                                <rect key="frame" x="87" y="263" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="X36-Uy-QBg"/>
+                        <viewLayoutGuide key="safeArea" id="fcb-bq-Xte"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3aQ-hR-ICD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E5q-nO-WXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="901" y="-212"/>
+            <point key="canvasLocation" x="870" y="-212"/>
         </scene>
     </scenes>
     <resources>
