@@ -121,7 +121,7 @@
                                 </state>
                                 <connections>
                                     <action selector="easyButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="B4q-vI-byR"/>
-                                    <segue destination="N84-WQ-iwt" kind="show" identifier="easy" id="BSK-xe-JX2"/>
+                                    <segue destination="N84-WQ-iwt" kind="show" identifier="quiz" id="aIi-wp-hDR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-je-wrN">
@@ -138,7 +138,6 @@
                                 </state>
                                 <connections>
                                     <action selector="normalButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="shg-YK-Tpj"/>
-                                    <segue destination="JeY-DA-Rj2" kind="show" identifier="normal" id="jAg-Pc-tw4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abm-ar-Ceg">
@@ -155,7 +154,6 @@
                                 </state>
                                 <connections>
                                     <action selector="hardButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="TrZ-Ee-bR6"/>
-                                    <segue destination="zxE-Jm-paz" kind="show" identifier="hard" id="EhN-6D-NpI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiu-hl-LWa">
@@ -172,7 +170,6 @@
                                 </state>
                                 <connections>
                                     <action selector="evilButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="aOR-U1-zka"/>
-                                    <segue destination="CGJ-B8-wAN" kind="show" identifier="evil" id="IB1-K8-aBn"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -206,58 +203,25 @@
                     <view key="view" contentMode="scaleToFill" id="gOq-Kc-fJx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4G-pa-nKT">
+                                <rect key="frame" x="84" y="144" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="L5l-wu-Uhx"/>
                     </view>
+                    <connections>
+                        <outlet property="levelLabel" destination="Y4G-pa-nKT" id="Don-rJ-kNo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBU-78-lPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="-529"/>
-        </scene>
-        <!--Normal View Controller-->
-        <scene sceneID="wlM-dS-QHg">
-            <objects>
-                <viewController id="JeY-DA-Rj2" customClass="NormalViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AEy-Qo-Glm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="iZf-c6-tXp"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AdC-Vw-SKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2629" y="-529"/>
-        </scene>
-        <!--Hard View Controller-->
-        <scene sceneID="qn5-WO-cBg">
-            <objects>
-                <viewController id="zxE-Jm-paz" customClass="HardViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PUj-Hq-Or6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="BV9-n9-C0b"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jEA-ph-hjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1858" y="135"/>
-        </scene>
-        <!--Evil View Controller-->
-        <scene sceneID="ncI-2O-dYe">
-            <objects>
-                <viewController id="CGJ-B8-wAN" customClass="EvilViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="OdW-Pc-2zS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="i2Y-QV-EDP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D88-fO-mgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2629" y="135"/>
+            <point key="canvasLocation" x="1846" y="-212"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="Cps-cD-qd4">
