@@ -17,7 +17,7 @@ class PictureBank{
         self.questionString = questionString
         characters = Array(questionString.lowercased())
         for char in characters{
-            images.append(imageBank[Int((char.asciiValue)!)-97])
+            images.append("image/" + imageBank[Int((char.asciiValue)!)-97])
         }
     // comment
     }
