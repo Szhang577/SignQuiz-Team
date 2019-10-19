@@ -17,9 +17,12 @@ class ViewController: UIViewController {
 
     //MARK: Actions
     @IBAction func startQuizButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "nextPage", sender: self)
+        performSegue(withIdentifier: "startQuiz", sender: self)
     }
     
+    @IBAction func reviewButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "review", sender: self)
+    }
     
 }
 

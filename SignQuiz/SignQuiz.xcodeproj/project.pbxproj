@@ -16,6 +16,11 @@
 		6371BF8B235B58E10088D256 /* SignQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371BF8A235B58E10088D256 /* SignQuizTests.swift */; };
 		63BD5644235B7BB3006E0C44 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 63BD5643235B7BB3006E0C44 /* Images */; };
 		63BD5648235B95CB006E0C44 /* StartQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */; };
+		63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5649235B9F40006E0C44 /* ReviewViewController.swift */; };
+		63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564B235BA088006E0C44 /* EasyViewController.swift */; };
+		63BD564E235BA0A1006E0C44 /* NormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564D235BA0A1006E0C44 /* NormalViewController.swift */; };
+		63BD5650235BA0AF006E0C44 /* HardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564F235BA0AF006E0C44 /* HardViewController.swift */; };
+		63BD5652235BA0BB006E0C44 /* EvilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5651235BA0BB006E0C44 /* EvilViewController.swift */; };
 		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 		A45A496A235B831100ECF36F /* words in Resources */ = {isa = PBXBuildFile; fileRef = A45A4969235B831100ECF36F /* words */; };
 /* End PBXBuildFile section */
@@ -44,6 +49,11 @@
 		6371BF8C235B58E10088D256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63BD5643235B7BB3006E0C44 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizViewController.swift; sourceTree = "<group>"; };
+		63BD5649235B9F40006E0C44 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		63BD564B235BA088006E0C44 /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
+		63BD564D235BA0A1006E0C44 /* NormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalViewController.swift; sourceTree = "<group>"; };
+		63BD564F235BA0AF006E0C44 /* HardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardViewController.swift; sourceTree = "<group>"; };
+		63BD5651235BA0BB006E0C44 /* EvilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvilViewController.swift; sourceTree = "<group>"; };
 		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A45A4969235B831100ECF36F /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = words; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +108,11 @@
 				6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */,
 				6371BF81235B58E10088D256 /* Info.plist */,
 				63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */,
+				63BD5649235B9F40006E0C44 /* ReviewViewController.swift */,
+				63BD564B235BA088006E0C44 /* EasyViewController.swift */,
+				63BD564D235BA0A1006E0C44 /* NormalViewController.swift */,
+				63BD564F235BA0AF006E0C44 /* HardViewController.swift */,
+				63BD5651235BA0BB006E0C44 /* EvilViewController.swift */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
@@ -216,7 +231,12 @@
 			files = (
 				4A8E1EFF235B784A0071A21B /* PictureBank.swift in Sources */,
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
+				63BD5650235BA0AF006E0C44 /* HardViewController.swift in Sources */,
+				63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */,
+				63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */,
 				6371BF78235B58E10088D256 /* ViewController.swift in Sources */,
+				63BD5652235BA0BB006E0C44 /* EvilViewController.swift in Sources */,
+				63BD564E235BA0A1006E0C44 /* NormalViewController.swift in Sources */,
 				6371BF76235B58E10088D256 /* AppDelegate.swift in Sources */,
 				63BD5648235B95CB006E0C44 /* StartQuizViewController.swift in Sources */,
 			);

@@ -20,35 +20,39 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epr-Z7-vvB">
                                 <rect key="frame" x="71" y="503" width="272" height="80"/>
-                                <color key="backgroundColor" red="0.30149904536629923" green="0.7876302814871281" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.77254901960784317" green="0.019607843137254902" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="IFt-lh-eIn"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="pQZ-pM-fnq"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <color key="tintColor" red="0.97679880112384143" green="1" blue="0.53752002043952563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJd-qw-7ty"/>
-                                    <segue destination="TIe-Hq-ZFl" kind="show" identifier="nextPage" id="5tB-DN-2VP"/>
+                                    <segue destination="TIe-Hq-ZFl" kind="show" identifier="startQuiz" id="5tB-DN-2VP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-lS-DgO">
                                 <rect key="frame" x="71" y="634" width="272" height="80"/>
-                                <color key="backgroundColor" red="0.3014990454" green="0.78763028150000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.77254901960784317" green="0.019607843137254902" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="TDU-Rq-GaB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
-                                <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Review"/>
+                                <connections>
+                                    <action selector="reviewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTL-T5-JRd"/>
+                                    <segue destination="UFB-H9-dAh" kind="show" identifier="review" id="fyW-qw-8wL"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-VE-pDv">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-VE-pDv">
                                 <rect key="frame" x="364" y="112" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-uz-nkx">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Chq-gf-VqK"/>
                                             <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="S7R-P7-GX9"/>
@@ -57,22 +61,28 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hdP-uz-nkx" secondAttribute="bottom" id="U0k-h4-xL1"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Af-IME">
                                 <rect key="frame" x="47" y="275" width="320" height="88"/>
+                                <color key="tintColor" red="0.77357649803161621" green="0.017899435013532639" blue="0.045932851731777191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="5oP-xh-WtX"/>
                                     <constraint firstAttribute="height" constant="88" id="fHb-65-boa"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
-                                <color key="textColor" red="0.25570986239999999" green="0.26345226919999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="55"/>
+                                <color key="textColor" red="0.77254901960784317" green="0.019607843137254902" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9158058762550354" green="0.83644396066665649" blue="0.74806898832321167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="tl6-Af-IME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="0Sb-gz-h8Q"/>
+                            <constraint firstItem="1GX-VE-pDv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="68" id="1Lt-cW-pmB"/>
                             <constraint firstItem="tl6-Af-IME" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="231" id="CW4-Nm-3Pn"/>
+                            <constraint firstAttribute="trailing" secondItem="1GX-VE-pDv" secondAttribute="trailing" id="MB0-Jk-4bH"/>
                             <constraint firstItem="tl6-Af-IME" firstAttribute="centerX" secondItem="q7J-lS-DgO" secondAttribute="centerX" id="NTU-1A-1uJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q7J-lS-DgO" secondAttribute="bottom" constant="148" id="R2g-GP-aef"/>
                             <constraint firstItem="q7J-lS-DgO" firstAttribute="top" secondItem="epr-Z7-vvB" secondAttribute="bottom" constant="51" id="R5F-xG-8hd"/>
@@ -96,16 +106,176 @@
                     <view key="view" contentMode="scaleToFill" id="0HP-Oc-WfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJI-4m-uwe">
+                                <rect key="frame" x="95" y="172" width="224" height="80"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="6Sr-Au-EhD"/>
+                                    <constraint firstAttribute="height" constant="80" id="Yf2-hk-d7F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Easy">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="easyButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="B4q-vI-byR"/>
+                                    <segue destination="N84-WQ-iwt" kind="show" identifier="easy" id="BSK-xe-JX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-je-wrN">
+                                <rect key="frame" x="95" y="312" width="224" height="80"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="mPi-xR-ROa"/>
+                                    <constraint firstAttribute="height" constant="80" id="vi7-Bx-Hv8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Normal">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="normalButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="shg-YK-Tpj"/>
+                                    <segue destination="JeY-DA-Rj2" kind="show" identifier="normal" id="jAg-Pc-tw4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abm-ar-Ceg">
+                                <rect key="frame" x="95" y="452" width="224" height="80"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="01F-sv-6WM"/>
+                                    <constraint firstAttribute="width" constant="225" id="1nw-cT-TYJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Hard">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hardButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="TrZ-Ee-bR6"/>
+                                    <segue destination="zxE-Jm-paz" kind="show" identifier="hard" id="EhN-6D-NpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aiu-hl-LWa">
+                                <rect key="frame" x="95" y="592" width="224" height="80"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="WZW-F3-bNK"/>
+                                    <constraint firstAttribute="height" constant="80" id="XCV-v0-P97"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
+                                <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Evil">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="evilButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="aOR-U1-zka"/>
+                                    <segue destination="CGJ-B8-wAN" kind="show" identifier="evil" id="IB1-K8-aBn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9158058762550354" green="0.83644396066665649" blue="0.74806898832321167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qJI-4m-uwe" firstAttribute="top" secondItem="fcb-bq-Xte" secondAttribute="top" constant="128" id="0Gd-oH-qEf"/>
+                            <constraint firstItem="3UZ-je-wrN" firstAttribute="top" secondItem="qJI-4m-uwe" secondAttribute="bottom" constant="60" id="2bu-m3-KFF"/>
+                            <constraint firstItem="fcb-bq-Xte" firstAttribute="trailing" secondItem="Aiu-hl-LWa" secondAttribute="trailing" constant="95" id="2fN-2d-QXd"/>
+                            <constraint firstItem="Aiu-hl-LWa" firstAttribute="leading" secondItem="fcb-bq-Xte" secondAttribute="leading" constant="95" id="7Vm-ho-Fbi"/>
+                            <constraint firstItem="3UZ-je-wrN" firstAttribute="leading" secondItem="fcb-bq-Xte" secondAttribute="leading" constant="95" id="Aae-4C-IDd"/>
+                            <constraint firstItem="fcb-bq-Xte" firstAttribute="bottom" secondItem="Aiu-hl-LWa" secondAttribute="bottom" constant="190" id="DsY-iw-8Kn"/>
+                            <constraint firstItem="fcb-bq-Xte" firstAttribute="trailing" secondItem="qJI-4m-uwe" secondAttribute="trailing" constant="95" id="ELl-bg-xXK"/>
+                            <constraint firstItem="fcb-bq-Xte" firstAttribute="trailing" secondItem="3UZ-je-wrN" secondAttribute="trailing" constant="95" id="HFI-Ox-LPw"/>
+                            <constraint firstItem="qJI-4m-uwe" firstAttribute="leading" secondItem="fcb-bq-Xte" secondAttribute="leading" constant="95" id="J2g-1J-v06"/>
+                            <constraint firstItem="Aiu-hl-LWa" firstAttribute="top" secondItem="abm-ar-Ceg" secondAttribute="bottom" constant="60" id="brf-YZ-GAv"/>
+                            <constraint firstItem="abm-ar-Ceg" firstAttribute="top" secondItem="3UZ-je-wrN" secondAttribute="bottom" constant="60" id="qei-ss-R4T"/>
+                            <constraint firstItem="fcb-bq-Xte" firstAttribute="trailing" secondItem="abm-ar-Ceg" secondAttribute="trailing" constant="95" id="scZ-02-MJI"/>
+                            <constraint firstItem="abm-ar-Ceg" firstAttribute="leading" secondItem="fcb-bq-Xte" secondAttribute="leading" constant="95" id="wWn-HL-JWj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fcb-bq-Xte"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5q-nO-WXI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-212"/>
+            <point key="canvasLocation" x="869.56521739130437" y="-212.27678571428569"/>
+        </scene>
+        <!--Easy View Controller-->
+        <scene sceneID="FlP-iV-SBM">
+            <objects>
+                <viewController id="N84-WQ-iwt" customClass="EasyViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gOq-Kc-fJx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="L5l-wu-Uhx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QBU-78-lPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-529"/>
+        </scene>
+        <!--Normal View Controller-->
+        <scene sceneID="wlM-dS-QHg">
+            <objects>
+                <viewController id="JeY-DA-Rj2" customClass="NormalViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEy-Qo-Glm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="iZf-c6-tXp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdC-Vw-SKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629" y="-529"/>
+        </scene>
+        <!--Hard View Controller-->
+        <scene sceneID="qn5-WO-cBg">
+            <objects>
+                <viewController id="zxE-Jm-paz" customClass="HardViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PUj-Hq-Or6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="BV9-n9-C0b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jEA-ph-hjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="135"/>
+        </scene>
+        <!--Evil View Controller-->
+        <scene sceneID="ncI-2O-dYe">
+            <objects>
+                <viewController id="CGJ-B8-wAN" customClass="EvilViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OdW-Pc-2zS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="i2Y-QV-EDP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D88-fO-mgr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2629" y="135"/>
+        </scene>
+        <!--Review View Controller-->
+        <scene sceneID="Cps-cD-qd4">
+            <objects>
+                <viewController id="UFB-H9-dAh" customClass="ReviewViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pp8-Yc-PJi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4pC-gt-Jke"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THs-sw-vtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="492"/>
         </scene>
     </scenes>
     <resources>
-        <image name="SettingIcon" width="440" height="400"/>
+        <image name="SettingIcon" width="500" height="500"/>
     </resources>
 </document>
