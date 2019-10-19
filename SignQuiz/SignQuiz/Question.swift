@@ -18,7 +18,7 @@ class Question{
         self.aslPath = aslPath
         self.answer = ""
     }
-    
+     
     func get_question(){
         // generate question with asl images correspondanding to answer
         
