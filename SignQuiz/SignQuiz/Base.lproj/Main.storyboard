@@ -25,6 +25,11 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="tintColor" red="0.97679880112384143" green="1" blue="0.53752002043952563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startQuiz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiB-Bz-TdE"/>
+                                    <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tia-dk-9eu"/>
+                                    <segue destination="INl-RP-eag" kind="show" identifier="startQuiz" id="QAa-TG-Gdw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7J-lS-DgO">
                                 <rect key="frame" x="71" y="634" width="272" height="80"/>
@@ -33,11 +38,15 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="tintColor" red="0.97679880109999995" green="1" blue="0.53752002040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Review"/>
+                                <connections>
+                                    <segue destination="lXa-bs-cNP" kind="show" id="jWb-o7-JEc"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" image="SettingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hdP-uz-nkx">
-                                <rect key="frame" x="328" y="88" width="50" height="50"/>
+                                <rect key="frame" x="364" y="88" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="S7R-P7-GX9"/>
+                                    <constraint firstAttribute="width" secondItem="hdP-uz-nkx" secondAttribute="height" multiplier="1:1" id="cwp-pL-nAn"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tl6-Af-IME">
@@ -49,12 +58,45 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hdP-uz-nkx" secondAttribute="trailing" id="t3C-zB-UIq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+            <point key="canvasLocation" x="87" y="-212"/>
+        </scene>
+        <!--Start Quiz View Controller-->
+        <scene sceneID="tXm-pA-uWL">
+            <objects>
+                <viewController id="INl-RP-eag" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KRm-WY-Ep9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LHF-OA-FGp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SqP-AU-66r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="-212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rNu-bd-vNA">
+            <objects>
+                <viewController id="lXa-bs-cNP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L0s-TW-DrC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eQ8-lE-nSc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BNU-vj-FLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="851" y="443"/>
         </scene>
     </scenes>
     <resources>
