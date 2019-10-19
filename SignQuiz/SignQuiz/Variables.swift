@@ -14,3 +14,4 @@ struct variables{
     static var reviewWords : [String] = []
     
 }
+
