@@ -14,6 +14,7 @@ class Dictionary{
     var normalWords: [String] = [""]
     var hardWords: [String] = [""]
     var evilWords: [String] = [""]
+    var answer = ""
     
     init() {
         //read the word in txt files and initialize the word lists
@@ -55,20 +56,30 @@ class Dictionary{
     
     }
     
-    func get_word(type: String) -> String {
+    func set_word(type: String){
         //get random word according to type and return nothing when the type is in wrong format
         if type == "easy"{
-            return easyWords.randomElement()!
+            answer = easyWords.randomElement()!
         }else if type == "normal"{
-            return normalWords.randomElement()!
+            answer = normalWords.randomElement()!
         }else if type == "hard" {
-            return hardWords.randomElement()!
+            answer = hardWords.randomElement()!
         }else if type == "evil" {
-            return evilWords.randomElement()!
-        }else{
-            return ""
+            answer = evilWords.randomElement()!
         }
     }
+        
+    func get_word() -> String {
+        return answer
+    }
 
+    func check(input: String) -> Bool {
+        return input == answer
+    }
+    
+    func getImgPath() -> [String] {
+        let picBank = PictureBank(questionString: self.answer)
+        return picBank.toImagesFile()
+    }
 }
 

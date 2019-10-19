@@ -10,7 +10,8 @@ import Foundation
 
 struct variables{
     static var level = ""
-    final var dictionary = Dictionary()
-    
-    
+//    
+//    var question =  Question(wordType: variables.level, dic: self.dictionary)
+//    var picBank = PictureBank(questionString: question.get_question())
 }
+
