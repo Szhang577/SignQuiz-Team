@@ -13,9 +13,7 @@
 		6371BF7D235B58E10088D256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6371BF7C235B58E10088D256 /* Assets.xcassets */; };
 		6371BF80235B58E10088D256 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */; };
 		6371BF8B235B58E10088D256 /* SignQuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371BF8A235B58E10088D256 /* SignQuizTests.swift */; };
-		A45A4960235B5AF000ECF36F /* Question_generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A495E235B5AD900ECF36F /* Question_generator.swift */; };
-		A45A4962235B5B1700ECF36F /* Quiz_generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4961235B5B1700ECF36F /* Quiz_generator.swift */; };
-		A45A4964235B630D00ECF36F /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4963235B630D00ECF36F /* Randoms.swift */; };
+		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +37,7 @@
 		6371BF86235B58E10088D256 /* SignQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371BF8A235B58E10088D256 /* SignQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignQuizTests.swift; sourceTree = "<group>"; };
 		6371BF8C235B58E10088D256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A45A495E235B5AD900ECF36F /* Question_generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question_generator.swift; sourceTree = "<group>"; };
-		A45A4961235B5B1700ECF36F /* Quiz_generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz_generator.swift; sourceTree = "<group>"; };
-		A45A4963235B630D00ECF36F /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
+		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +83,9 @@
 				6371BF77235B58E10088D256 /* ViewController.swift */,
 				6371BF79235B58E10088D256 /* Main.storyboard */,
 				6371BF7C235B58E10088D256 /* Assets.xcassets */,
+				A45A4967235B75B800ECF36F /* Question.swift */,
 				6371BF7E235B58E10088D256 /* LaunchScreen.storyboard */,
-				A45A4963235B630D00ECF36F /* Randoms.swift */,
-				A45A495E235B5AD900ECF36F /* Question_generator.swift */,
 				6371BF81235B58E10088D256 /* Info.plist */,
-				A45A4961235B5B1700ECF36F /* Quiz_generator.swift */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
@@ -206,10 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A45A4960235B5AF000ECF36F /* Question_generator.swift in Sources */,
-				A45A4964235B630D00ECF36F /* Randoms.swift in Sources */,
+				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
 				6371BF78235B58E10088D256 /* ViewController.swift in Sources */,
-				A45A4962235B5B1700ECF36F /* Quiz_generator.swift in Sources */,
 				6371BF76235B58E10088D256 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
