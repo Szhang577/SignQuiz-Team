@@ -65,7 +65,6 @@
 		6371BF69235B58E10088D256 = {
 			isa = PBXGroup;
 			children = (
-				63BD5643235B7BB3006E0C44 /* Images */,
 				6371BF74235B58E10088D256 /* SignQuiz */,
 				6371BF89235B58E10088D256 /* SignQuizTests */,
 				6371BF73235B58E10088D256 /* Products */,
@@ -84,6 +83,7 @@
 		6371BF74235B58E10088D256 /* SignQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				63BD5643235B7BB3006E0C44 /* Images */,
 				6371BF75235B58E10088D256 /* AppDelegate.swift */,
 				6371BF77235B58E10088D256 /* ViewController.swift */,
 				6371BF79235B58E10088D256 /* Main.storyboard */,
