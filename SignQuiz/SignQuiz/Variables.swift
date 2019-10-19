@@ -10,4 +10,7 @@ import Foundation
 
 struct variables{
     static var level = ""
+    static var dictionary = Dictionary()
+    
+    
 }

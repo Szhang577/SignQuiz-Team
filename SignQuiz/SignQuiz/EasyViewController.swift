@@ -9,7 +9,7 @@
 import UIKit
 
 class EasyViewController: UIViewController {
-//    var quizType: String = "1"
+    var question: Question = Question(wordType: variables.level, dic: variables.dictionary)
     
     //MARK: Properities
     @IBOutlet weak var levelLabel: UILabel?
@@ -28,6 +28,7 @@ class EasyViewController: UIViewController {
         levelLabel?.text = variables.level
     }
     
+    
     //MARK: Actions
     @IBAction func checkAnswerButton(_ sender: UIButton) {
     }
@@ -43,6 +44,10 @@ class EasyViewController: UIViewController {
     @IBAction func nextButton(_ sender: UIButton) {
     }
     @IBAction func repeatButton(_ sender: UIButton) {
+    }
+    
+    func set_image(){
+        
     }
     
 }

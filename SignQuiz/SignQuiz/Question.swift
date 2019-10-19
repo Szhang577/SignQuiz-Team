@@ -10,12 +10,10 @@ import Foundation
 
 class Question{
     var answer: String
-    var aslPath: String //path to directory asl images
     
-    init(aslPath: String, wordType: String, dic: Dictionary) {
+    init(wordType: String, dic: Dictionary) {
         // set the aslpath to the filepath
         // randomly generate an answer
-        self.aslPath = aslPath
         self.answer = dic.get_word(type: wordType)
     }
      
