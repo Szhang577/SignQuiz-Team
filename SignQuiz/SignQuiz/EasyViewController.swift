@@ -31,7 +31,7 @@ class EasyViewController: UIViewController {
     //MARK: Actions
     @IBAction func checkAnswerButton(_ sender: UIButton) {
         if question.check(input: userAnswer.text!){
-            answerStatus.text = "You are correct"
+            answerStatus.text = "You are correct, please try this one"
             reset()
         }else{
             answerStatus.text = "Idiot, please try again"
@@ -66,7 +66,7 @@ class EasyViewController: UIViewController {
         set_image()
         question = Question(wordType: variables.level, dic: variables.dictionary)
         viewDidLoad()
-        userAnswer.text = "Please Enter:"
+        userAnswer.text = ""
     }
     
 }

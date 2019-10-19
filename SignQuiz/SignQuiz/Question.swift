@@ -14,7 +14,7 @@ class Question{
     init(wordType: String, dic: Dictionary) {
         // set the aslpath to the filepath
         // randomly generate an answer
-        self.answer = dic.get_word()
+        self.answer = dic.get_word(type: wordType)
     }
      
     func get_question() -> String{
@@ -22,7 +22,7 @@ class Question{
     }
     
     func check(input: String) -> Bool {
-        return input == answer
+        return input.lowercased() == answer
     }
     
 }
