@@ -56,30 +56,19 @@ class Dictionary{
     
     }
     
-    func set_word(type: String){
+    func get_word(type: String) -> String {
         //get random word according to type and return nothing when the type is in wrong format
         if type == "easy"{
-            answer = easyWords.randomElement()!
+            return easyWords.randomElement()!
         }else if type == "normal"{
-            answer = normalWords.randomElement()!
+            return normalWords.randomElement()!
         }else if type == "hard" {
-            answer = hardWords.randomElement()!
+            return hardWords.randomElement()!
         }else if type == "evil" {
-            answer = evilWords.randomElement()!
+            return evilWords.randomElement()!
+        }else{
+            return ""
         }
-    }
-        
-    func get_word() -> String {
-        return answer
-    }
-
-    func check(input: String) -> Bool {
-        return input == answer
-    }
-    
-    func getImgPath() -> [String] {
-        let picBank = PictureBank(questionString: self.answer)
-        return picBank.toImagesFile()
     }
 }
 
