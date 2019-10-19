@@ -17,7 +17,7 @@ class Question{
         self.answer = dic.get_word(type: wordType)
     }
      
-    func get_question(picBank: PictureBank) -> String{
+    func get_question() -> String{
         return self.answer
     }
     

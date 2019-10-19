@@ -9,7 +9,8 @@
 import UIKit
 
 class EasyViewController: UIViewController {
-    var question: Question = Question(wordType: variables.level, dic: variables.dictionary)
+    var question = Question(wordType: variables.level, dic: variables.dictionary)
+    var picBank = PictureBank(questionString: question.get_question())
     
     //MARK: Properities
     @IBOutlet weak var levelLabel: UILabel?
