@@ -45,9 +45,6 @@ class EasyViewController: UIViewController {
         answerStatus.text = "Added to review, the answer is: " + question.answer
     }
     
-    @IBAction func revealAnswerButton(_ sender: UIButton) {
-        
-    }
     
     @IBAction func backButton(_ sender: UIButton) {
         performSegue(withIdentifier: "backToLevel", sender: self)

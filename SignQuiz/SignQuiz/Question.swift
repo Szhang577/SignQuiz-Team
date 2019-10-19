@@ -14,7 +14,7 @@ class Question{
     init(wordType: String, dic: Dictionary) {
         // set the aslpath to the filepath
         // randomly generate an answer
-        self.answer = dic.get_word(type: wordType)
+        self.answer = dic.get_word()
     }
      
     func get_question() -> String{
