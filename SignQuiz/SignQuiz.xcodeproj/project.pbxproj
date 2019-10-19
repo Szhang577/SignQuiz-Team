@@ -17,7 +17,7 @@
 		63BD5644235B7BB3006E0C44 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 63BD5643235B7BB3006E0C44 /* Images */; };
 		63BD5648235B95CB006E0C44 /* StartQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */; };
 		63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5649235B9F40006E0C44 /* ReviewViewController.swift */; };
-		63BD564C235BA088006E0C44 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564B235BA088006E0C44 /* QuizViewController.swift */; };
+		63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564B235BA088006E0C44 /* EasyViewController.swift */; };
 		63BD5654235BB5B8006E0C44 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5653235BB5B8006E0C44 /* Variables.swift */; };
 		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 		A45A496A235B831100ECF36F /* words in Resources */ = {isa = PBXBuildFile; fileRef = A45A4969235B831100ECF36F /* words */; };
@@ -49,7 +49,7 @@
 		63BD5643235B7BB3006E0C44 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartQuizViewController.swift; sourceTree = "<group>"; };
 		63BD5649235B9F40006E0C44 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
-		63BD564B235BA088006E0C44 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		63BD564B235BA088006E0C44 /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
 		63BD5653235BB5B8006E0C44 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A45A4969235B831100ECF36F /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = words; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				6371BF81235B58E10088D256 /* Info.plist */,
 				63BD5647235B95CB006E0C44 /* StartQuizViewController.swift */,
 				63BD5649235B9F40006E0C44 /* ReviewViewController.swift */,
-				63BD564B235BA088006E0C44 /* QuizViewController.swift */,
+				63BD564B235BA088006E0C44 /* EasyViewController.swift */,
 				63BD5653235BB5B8006E0C44 /* Variables.swift */,
 			);
 			path = SignQuiz;
@@ -230,7 +230,7 @@
 				A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */,
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
 				63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */,
-				63BD564C235BA088006E0C44 /* QuizViewController.swift in Sources */,
+				63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */,
 				6371BF78235B58E10088D256 /* ViewController.swift in Sources */,
 				63BD5654235BB5B8006E0C44 /* Variables.swift in Sources */,
 				6371BF76235B58E10088D256 /* AppDelegate.swift in Sources */,

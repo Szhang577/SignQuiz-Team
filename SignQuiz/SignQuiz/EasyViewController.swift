@@ -13,6 +13,7 @@ class EasyViewController: UIViewController {
     
     //MARK: Properities
     @IBOutlet weak var levelLabel: UILabel?
+    @IBOutlet weak var quizImages: UIImageView!
     
     override func viewDidLoad() {
 //        let vc = StartQuizViewController(nibName: "StartQuizViewCotnroller" , bundle: nil)
