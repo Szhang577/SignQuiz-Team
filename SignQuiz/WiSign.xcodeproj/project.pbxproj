@@ -19,6 +19,7 @@
 		63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5649235B9F40006E0C44 /* ReviewViewController.swift */; };
 		63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD564B235BA088006E0C44 /* EasyViewController.swift */; };
 		63BD5654235BB5B8006E0C44 /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD5653235BB5B8006E0C44 /* Variables.swift */; };
+		63F6D401235BFCAF00891D15 /* StudyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F6D400235BFCAF00891D15 /* StudyViewController.swift */; };
 		A45A4968235B75B800ECF36F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A4967235B75B800ECF36F /* Question.swift */; };
 		A45A496A235B831100ECF36F /* words in Resources */ = {isa = PBXBuildFile; fileRef = A45A4969235B831100ECF36F /* words */; };
 		A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A496B235B8BBE00ECF36F /* Dictionary.swift */; };
@@ -51,6 +52,7 @@
 		63BD5649235B9F40006E0C44 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		63BD564B235BA088006E0C44 /* EasyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyViewController.swift; sourceTree = "<group>"; };
 		63BD5653235BB5B8006E0C44 /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
+		63F6D400235BFCAF00891D15 /* StudyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyViewController.swift; sourceTree = "<group>"; };
 		A45A4967235B75B800ECF36F /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		A45A4969235B831100ECF36F /* words */ = {isa = PBXFileReference; lastKnownFileType = folder; path = words; sourceTree = "<group>"; };
 		A45A496B235B8BBE00ECF36F /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				63BD5649235B9F40006E0C44 /* ReviewViewController.swift */,
 				63BD564B235BA088006E0C44 /* EasyViewController.swift */,
 				63BD5653235BB5B8006E0C44 /* Variables.swift */,
+				63F6D400235BFCAF00891D15 /* StudyViewController.swift */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63F6D401235BFCAF00891D15 /* StudyViewController.swift in Sources */,
 				4A8E1EFF235B784A0071A21B /* PictureBank.swift in Sources */,
 				A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */,
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,

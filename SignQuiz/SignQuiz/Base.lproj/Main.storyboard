@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WiSign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="45"/>
                                 <color key="tintColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Quiz"/>
                                 <connections>
                                     <action selector="startQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJd-qw-7ty"/>
                                     <segue destination="TIe-Hq-ZFl" kind="show" identifier="startQuiz" id="5tB-DN-2VP"/>
@@ -44,7 +44,7 @@
                                 <state key="normal" title="Review"/>
                                 <connections>
                                     <action selector="reviewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pTL-T5-JRd"/>
-                                    <segue destination="UFB-H9-dAh" kind="show" identifier="review" id="fyW-qw-8wL"/>
+                                    <segue destination="12Z-Bi-VCn" kind="show" identifier="review" id="epR-W9-gTO"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1GX-VE-pDv">
@@ -62,7 +62,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5sX-Xm-qHl">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeLogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5sX-Xm-qHl">
                                 <rect key="frame" x="20" y="159" width="374" height="388"/>
                             </imageView>
                         </subviews>
@@ -93,7 +93,7 @@
         <!--Start Quiz View Controller-->
         <scene sceneID="y2J-c1-cv4">
             <objects>
-                <viewController id="TIe-Hq-ZFl" customClass="StartQuizViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TIe-Hq-ZFl" customClass="StartQuizViewController" customModule="WiSign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0HP-Oc-WfS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -199,7 +199,7 @@
         <!--Easy View Controller-->
         <scene sceneID="FlP-iV-SBM">
             <objects>
-                <viewController id="N84-WQ-iwt" customClass="EasyViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N84-WQ-iwt" customClass="EasyViewController" customModule="WiSign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOq-Kc-fJx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +225,7 @@
                                 <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This word is no sense" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khc-qq-PZq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khc-qq-PZq">
                                 <rect key="frame" x="0.0" y="562" width="414" height="334"/>
                                 <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -331,10 +331,44 @@
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="-212.27678571428569"/>
         </scene>
+        <!--Study View Controller-->
+        <scene sceneID="W03-7S-4dO">
+            <objects>
+                <viewController id="12Z-Bi-VCn" customClass="StudyViewController" customModule="WiSign" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3YE-0Q-PeU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-kC-7fc">
+                                <rect key="frame" x="127" y="251" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="studyButton:" destination="12Z-Bi-VCn" eventType="touchUpInside" id="7Dd-dr-1QK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-tj-b6U">
+                                <rect key="frame" x="167" y="451" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="forReviewButton:" destination="12Z-Bi-VCn" eventType="touchUpInside" id="Vgx-EL-u2u"/>
+                                    <segue destination="UFB-H9-dAh" kind="show" identifier="reviewList" id="3IR-of-olZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="h6e-aD-e2f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93w-C1-Bew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="491.51785714285711"/>
+        </scene>
         <!--Review View Controller-->
         <scene sceneID="Cps-cD-qd4">
             <objects>
-                <viewController id="UFB-H9-dAh" customClass="ReviewViewController" customModule="SignQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UFB-H9-dAh" customClass="ReviewViewController" customModule="WiSign" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pp8-Yc-PJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -343,27 +377,29 @@
                                 <rect key="frame" x="20" y="149" width="374" height="319"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q8b-v7-kDa">
-                                <rect key="frame" x="341" y="71" width="53" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30r-7G-Xm7">
-                                <rect key="frame" x="20" y="507" width="374" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-GU-6sr">
                                 <rect key="frame" x="115" y="665" width="185" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="removeButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="jsQ-cD-doD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN7-gR-4bV">
+                                <rect key="frame" x="169" y="560" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="ti3-ZV-3mk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4pC-gt-Jke"/>
                     </view>
+                    <connections>
+                        <outlet property="reviewImages" destination="O7y-V4-ljp" id="4pG-6B-GlH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="THs-sw-vtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -380,7 +416,6 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aIi-wp-hDR"/>
         <segue reference="F3B-Mw-gTS"/>
     </inferredMetricsTieBreakers>
 </document>
