@@ -9,17 +9,18 @@
 import UIKit
 
 class ReviewViewController: UIViewController {
-    var revQue = variables.reviewWords.randomElement()
+    var revQue = variables.reviewWords.first
     var timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
     
     // MARK: properties
     @IBOutlet weak var reviewImages: UIImageView!
     
     @IBOutlet weak var noReviewLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if revQue == nil {
-            
+            noReviewLabel.text = "There are no questions for review, \n please take quiz first :)"
         }else{
             timer.schedule(deadline: .now(), repeating: .milliseconds(500))
             image_flow()
@@ -29,9 +30,18 @@ class ReviewViewController: UIViewController {
     // MARK: Actions
     @IBAction func infoButton(_ sender: UIButton) {
     }
+    
     @IBAction func removeButton(_ sender: UIButton) {
+        if (revQue != nil && variables.reviewWords.contains(revQue!)){
+            variables.reviewWords.removeFirst()
+        }
     }
+    
     @IBAction func repeatButton(_ sender: UIButton) {
+        timer.cancel()
+        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
+        timer.schedule(deadline: .now(), repeating: .milliseconds(500))
+        image_flow()
     }
     @IBAction func backButton(_ sender: UIButton) {
 //        performSegue(withIdentifier: "backToReview", sender: self)
@@ -40,8 +50,8 @@ class ReviewViewController: UIViewController {
     }
     
     func image_flow(){
-        print(revQue)
-        //change image every second
+        //change image every 0.5 second
+        print(revQue!)
         let picBank = PictureBank(questionString: revQue!)
         let imgList = picBank.toImagesFile()
         var imgCount = 0
