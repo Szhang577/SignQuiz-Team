@@ -26,7 +26,7 @@ class EasyViewController: UIViewController {
         
         view.addGestureRecognizer(edgePan)
         
-        levelLabel?.text = variables.level
+        levelLabel?.text = variables.level.capitalized
         timer.schedule(deadline: .now(), repeating: .milliseconds(500))
         image_flow()
         
@@ -71,6 +71,7 @@ class EasyViewController: UIViewController {
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
+            answerStatus.text = ""
         reset()
     }
     @IBAction func repeatButton(_ sender: UIButton) {
@@ -88,7 +89,7 @@ class EasyViewController: UIViewController {
     
     func reset(){
         userAnswer.text = ""
-        answerStatus.text = ""
+        //answerStatus.text = ""
         question = Question(wordType: variables.level, dic: variables.dictionary)
         timer.cancel()
         timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
