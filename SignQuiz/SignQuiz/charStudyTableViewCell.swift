@@ -10,6 +10,7 @@ import UIKit
 
 class charStudyTableViewCell: UITableViewCell {
 
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +22,6 @@ class charStudyTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func aButton(_ sender: UIButton) {
+    }
 }
