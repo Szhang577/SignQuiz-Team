@@ -30,6 +30,8 @@ class ReviewViewController: UIViewController {
     }
     @IBAction func removeButton(_ sender: UIButton) {
     }
+    @IBAction func repeatButton(_ sender: UIButton) {
+    }
     
     func image_flow(){
         print(revQue)
