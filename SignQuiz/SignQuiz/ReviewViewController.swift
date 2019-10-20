@@ -15,6 +15,7 @@ class ReviewViewController: UIViewController {
     // MARK: properties
     @IBOutlet weak var reviewImages: UIImageView!
     
+    @IBOutlet weak var noReviewLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         if revQue == nil {
