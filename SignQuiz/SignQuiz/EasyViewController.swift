@@ -10,7 +10,7 @@ import UIKit
 
 class EasyViewController: UIViewController {
     var question = Question(wordType: variables.level, dic: variables.dictionary)
-    
+    var timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
     
     //MARK: Properities
     @IBOutlet weak var levelLabel: UILabel?
@@ -20,11 +20,14 @@ class EasyViewController: UIViewController {
     
     @IBOutlet weak var answerStatus: UILabel!
     
+    @IBOutlet weak var repeatButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //levelLabel?.text = variables.level
         levelLabel?.text = question.answer
-        set_image()
+        timer.schedule(deadline: .now(), repeating: .milliseconds(500))
+        image_flow()
     }
     
     
@@ -54,6 +57,10 @@ class EasyViewController: UIViewController {
         reset()
     }
     @IBAction func repeatButton(_ sender: UIButton) {
+        timer.cancel()
+        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
+        timer.schedule(deadline: .now(), repeating: .milliseconds(500))
+        image_flow()
     }
     
     func set_image(){
@@ -68,5 +75,37 @@ class EasyViewController: UIViewController {
         viewDidLoad()
         userAnswer.text = ""
     }
+    
+    func image_flow(){
+        //change image every second
+        let picBank = PictureBank(questionString: question.get_question())
+        let imgList = picBank.toImagesFile()
+        var imgCount = 0
+        var timeCount = imgList.count
+
+//        let timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
+
+        timer.setEventHandler(handler: {
+            // set image to the cur img
+            timeCount = timeCount - 1
+
+            // back to main thread
+            DispatchQueue.main.async {
+                print(imgList[imgCount])
+                self.quizImages.image = nil
+                self.quizImages.image = UIImage(named: imgList[imgCount])
+                imgCount = imgCount + 1
+                print("-------%d",timeCount);
+            }
+            
+            // finish showing all the images
+            if timeCount <= 0 {
+                self.timer.cancel()
+            }
+        })
+        
+        timer.resume()
+    }
+    
     
 }
