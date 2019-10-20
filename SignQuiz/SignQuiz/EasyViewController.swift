@@ -51,7 +51,9 @@ class EasyViewController: UIViewController {
     
     
     @IBAction func backButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "backToLevel", sender: self)
+        timer.cancel()
+        self.dismiss(animated: false, completion: nil)
+//        performSegue(withIdentifier: "backToLevel", sender: self)
     }
     
     @IBAction func nextButton(_ sender: UIButton) {
@@ -65,7 +67,7 @@ class EasyViewController: UIViewController {
     }
     
     func set_image(){
-        var picBank = PictureBank(questionString: question.get_question())
+        let picBank = PictureBank(questionString: question.get_question())
         print(picBank.toImagesFile()[0])
         quizImages.image = UIImage(named: picBank.toImagesFile()[0])
     }
@@ -100,11 +102,9 @@ class EasyViewController: UIViewController {
                 if (self.colorChange){
                     self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(222.0/255), blue: CGFloat(191.0/255), alpha:  CGFloat(1))
                     self.colorChange = !self.colorChange
-                    print(self.colorChange)
                 } else {
                     self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(213.0/255), blue:  CGFloat(191.0/255), alpha:  CGFloat(1))
                     self.colorChange = !self.colorChange
-                    print(self.colorChange)
                 }
             }
             
