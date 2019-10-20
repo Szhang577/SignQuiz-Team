@@ -77,7 +77,6 @@ class EasyViewController: UIViewController {
         timer.cancel()
         timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
         self.viewDidLoad()
-
     }
     
     func image_flow(){
