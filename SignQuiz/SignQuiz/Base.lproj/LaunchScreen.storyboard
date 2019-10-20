@@ -19,18 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9wX-rH-dKh">
-                                <rect key="frame" x="20" y="203" width="374" height="408"/>
+                                <rect key="frame" x="20" y="159" width="374" height="388"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="9wX-rH-dKh" secondAttribute="height" multiplier="11:12" id="AGO-D0-3Cv"/>
-                                    <constraint firstAttribute="height" constant="408" id="EqK-Zx-FZz"/>
+                                    <constraint firstAttribute="height" constant="388" id="EqK-Zx-FZz"/>
                                     <constraint firstAttribute="width" constant="374" id="sBD-IA-3o9"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9wX-rH-dKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="0w8-T8-RAf"/>
+                            <constraint firstItem="9wX-rH-dKh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="115" id="0w8-T8-RAf"/>
                             <constraint firstItem="9wX-rH-dKh" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="Am8-Ob-3dg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9wX-rH-dKh" secondAttribute="bottom" constant="315" id="OC6-S6-3b8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9wX-rH-dKh" secondAttribute="trailing" constant="20" id="Wde-aT-qVR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

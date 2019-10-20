@@ -32,9 +32,11 @@ class EasyViewController: UIViewController {
     @IBAction func checkAnswerButton(_ sender: UIButton) {
         if question.check(input: userAnswer.text!){
             answerStatus.text = "You are correct, please try this one"
+
             reset()
         }else{
             answerStatus.text = "Idiot, please try again"
+
         }
     }
     @IBAction func addToReview(_ sender: UIButton) {

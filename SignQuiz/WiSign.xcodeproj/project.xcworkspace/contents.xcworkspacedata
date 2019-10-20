@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SignQuiz.xcodeproj">
+      location = "self:/Users/Siyuan/Documents/GitHub/SignQuiz-Team/SignQuiz/WiSign.xcodeproj">
    </FileRef>
 </Workspace>

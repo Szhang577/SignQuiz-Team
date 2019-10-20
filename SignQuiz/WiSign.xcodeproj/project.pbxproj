@@ -36,14 +36,14 @@
 
 /* Begin PBXFileReference section */
 		4A8E1EFE235B784A0071A21B /* PictureBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBank.swift; sourceTree = "<group>"; };
-		6371BF72235B58E10088D256 /* SignQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6371BF72235B58E10088D256 /* WiSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371BF75235B58E10088D256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6371BF77235B58E10088D256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6371BF7A235B58E10088D256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6371BF7C235B58E10088D256 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6371BF7F235B58E10088D256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6371BF81235B58E10088D256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6371BF86235B58E10088D256 /* SignQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6371BF86235B58E10088D256 /* WiSignTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WiSignTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371BF8A235B58E10088D256 /* SignQuizTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignQuizTests.swift; sourceTree = "<group>"; };
 		6371BF8C235B58E10088D256 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63BD5643235B7BB3006E0C44 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 		6371BF73235B58E10088D256 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6371BF72235B58E10088D256 /* SignQuiz.app */,
-				6371BF86235B58E10088D256 /* SignQuizTests.xctest */,
+				6371BF72235B58E10088D256 /* WiSign.app */,
+				6371BF86235B58E10088D256 /* WiSignTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6371BF71235B58E10088D256 /* SignQuiz */ = {
+		6371BF71235B58E10088D256 /* WiSign */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6371BF8F235B58E10088D256 /* Build configuration list for PBXNativeTarget "SignQuiz" */;
+			buildConfigurationList = 6371BF8F235B58E10088D256 /* Build configuration list for PBXNativeTarget "WiSign" */;
 			buildPhases = (
 				6371BF6E235B58E10088D256 /* Sources */,
 				6371BF6F235B58E10088D256 /* Frameworks */,
@@ -138,14 +138,14 @@
 			);
 			dependencies = (
 			);
-			name = SignQuiz;
+			name = WiSign;
 			productName = SignQuiz;
-			productReference = 6371BF72235B58E10088D256 /* SignQuiz.app */;
+			productReference = 6371BF72235B58E10088D256 /* WiSign.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6371BF85235B58E10088D256 /* SignQuizTests */ = {
+		6371BF85235B58E10088D256 /* WiSignTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6371BF92235B58E10088D256 /* Build configuration list for PBXNativeTarget "SignQuizTests" */;
+			buildConfigurationList = 6371BF92235B58E10088D256 /* Build configuration list for PBXNativeTarget "WiSignTests" */;
 			buildPhases = (
 				6371BF82235B58E10088D256 /* Sources */,
 				6371BF83235B58E10088D256 /* Frameworks */,
@@ -156,9 +156,9 @@
 			dependencies = (
 				6371BF88235B58E10088D256 /* PBXTargetDependency */,
 			);
-			name = SignQuizTests;
+			name = WiSignTests;
 			productName = SignQuizTests;
-			productReference = 6371BF86235B58E10088D256 /* SignQuizTests.xctest */;
+			productReference = 6371BF86235B58E10088D256 /* WiSignTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +180,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6371BF6D235B58E10088D256 /* Build configuration list for PBXProject "SignQuiz" */;
+			buildConfigurationList = 6371BF6D235B58E10088D256 /* Build configuration list for PBXProject "WiSign" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -193,8 +193,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6371BF71235B58E10088D256 /* SignQuiz */,
-				6371BF85235B58E10088D256 /* SignQuizTests */,
+				6371BF71235B58E10088D256 /* WiSign */,
+				6371BF85235B58E10088D256 /* WiSignTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +251,7 @@
 /* Begin PBXTargetDependency section */
 		6371BF88235B58E10088D256 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6371BF71235B58E10088D256 /* SignQuiz */;
+			target = 6371BF71235B58E10088D256 /* WiSign */;
 			targetProxy = 6371BF87235B58E10088D256 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -445,7 +445,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignQuiz.app/SignQuiz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiSign.app/WiSign";
 			};
 			name = Debug;
 		};
@@ -466,14 +466,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignQuiz.app/SignQuiz";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WiSign.app/WiSign";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6371BF6D235B58E10088D256 /* Build configuration list for PBXProject "SignQuiz" */ = {
+		6371BF6D235B58E10088D256 /* Build configuration list for PBXProject "WiSign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6371BF8D235B58E10088D256 /* Debug */,
@@ -482,7 +482,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6371BF8F235B58E10088D256 /* Build configuration list for PBXNativeTarget "SignQuiz" */ = {
+		6371BF8F235B58E10088D256 /* Build configuration list for PBXNativeTarget "WiSign" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6371BF90235B58E10088D256 /* Debug */,
@@ -491,7 +491,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6371BF92235B58E10088D256 /* Build configuration list for PBXNativeTarget "SignQuizTests" */ = {
+		6371BF92235B58E10088D256 /* Build configuration list for PBXNativeTarget "WiSignTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6371BF93235B58E10088D256 /* Debug */,
