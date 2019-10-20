@@ -9,23 +9,19 @@
 import UIKit
 
 class EasyViewController: UIViewController {
+    var colorChange : Bool = false
     var question = Question(wordType: variables.level, dic: variables.dictionary)
     var timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
     
     //MARK: Properities
     @IBOutlet weak var levelLabel: UILabel?
     @IBOutlet weak var quizImages: UIImageView!
-    
     @IBOutlet weak var userAnswer: UITextField!
-    
     @IBOutlet weak var answerStatus: UILabel!
-    
-    @IBOutlet weak var repeatButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //levelLabel?.text = variables.level
-        levelLabel?.text = question.answer
+        levelLabel?.text = variables.level
         timer.schedule(deadline: .now(), repeating: .milliseconds(500))
         image_flow()
     }
@@ -34,12 +30,12 @@ class EasyViewController: UIViewController {
     //MARK: Actions
     @IBAction func checkAnswerButton(_ sender: UIButton) {
         if question.check(input: userAnswer.text!){
-            answerStatus.text = "You are correct, please try this one"
-
+            answerStatus.text = "You are correct, \n please try this one"
             reset()
         }else{
-            answerStatus.text = "Idiot, please try again"
-
+            answerStatus.text = "That's wrong, \n please try again"
+            variables.reviewWords.append(question.get_question())
+            userAnswer.text = ""
         }
     }
     @IBAction func addToReview(_ sender: UIButton) {
@@ -86,8 +82,7 @@ class EasyViewController: UIViewController {
         let imgList = picBank.toImagesFile()
         var imgCount = 0
         var timeCount = imgList.count
-
-//        let timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
+        print(question.get_question())
 
         timer.setEventHandler(handler: {
             // set image to the cur img
@@ -95,11 +90,19 @@ class EasyViewController: UIViewController {
 
             // back to main thread
             DispatchQueue.main.async {
-                print(imgList[imgCount])
                 self.quizImages.image = nil
                 self.quizImages.image = UIImage(named: imgList[imgCount])
                 imgCount = imgCount + 1
                 print("-------%d",timeCount);
+                if (self.colorChange){
+                    self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(222.0/255), blue: CGFloat(191.0/255), alpha:  CGFloat(1))
+                    self.colorChange = !self.colorChange
+                    print(self.colorChange)
+                } else {
+                    self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(213.0/255), blue:  CGFloat(191.0/255), alpha:  CGFloat(1))
+                    self.colorChange = !self.colorChange
+                    print(self.colorChange)
+                }
             }
             
             // finish showing all the images
