@@ -72,10 +72,12 @@ class EasyViewController: UIViewController {
     }
     
     func reset(){
-        set_image()
-        question = Question(wordType: variables.level, dic: variables.dictionary)
-        viewDidLoad()
         userAnswer.text = ""
+        question = Question(wordType: variables.level, dic: variables.dictionary)
+        timer.cancel()
+        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
+        self.viewDidLoad()
+
     }
     
     func image_flow(){
