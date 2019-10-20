@@ -44,7 +44,7 @@ class ReviewViewController: UIViewController {
     @objc func screenEdgeSwiped(_ recognizer: UIScreenEdgePanGestureRecognizer){
         if recognizer.state == .recognized{
             recognizer.state = .ended
-            performSegue(withIdentifier: "backToReview", sender: self)
+            performSegue(withIdentifier: "backToReivewPage", sender: self)
         }
     }
 
@@ -79,7 +79,7 @@ class ReviewViewController: UIViewController {
     }
     
     @IBAction func backButton(_ sender: UIButton) {
-        self.dismiss(animated: false, completion: nil)
+     //   self.dismiss(animated: false, completion: nil)
 //        performSegue(withIdentifier: "backToReview", sender: self)
     }
     

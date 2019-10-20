@@ -15,6 +15,8 @@ class GoToStudyViewController: UIViewController {
     
     @IBOutlet weak var charLabel: UILabel!
     
+    @IBOutlet weak var backgroundLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))

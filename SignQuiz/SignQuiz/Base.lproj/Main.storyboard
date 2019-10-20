@@ -394,23 +394,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVu-2z-XkB">
-                                <rect key="frame" x="20" y="110" width="374" height="328"/>
+                                <rect key="frame" x="20" y="199" width="374" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07F-en-Tjd">
+                                <rect key="frame" x="0.0" y="562" width="414" height="334"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="334" id="JQO-CT-tVS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hce-6r-hXg">
                                 <rect key="frame" x="20" y="797" width="55" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="red_backIcon"/>
+                                <state key="normal" title="Button" image="backIcon"/>
                                 <connections>
                                     <action selector="backToChar:" destination="sKy-cg-4Ei" eventType="touchUpInside" id="h6L-Te-Xtq"/>
                                     <segue destination="56C-il-3wy" kind="show" identifier="backToTable" id="P58-em-16R"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0X-RH-vnM">
-                                <rect key="frame" x="95" y="509" width="225" height="123"/>
+                                <rect key="frame" x="95" y="620" width="225" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="35"/>
-                                <color key="textColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="100"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -419,6 +429,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Xbq-x3-3Ex"/>
                     <connections>
+                        <outlet property="backgroundLabel" destination="07F-en-Tjd" id="epU-O4-YH6"/>
                         <outlet property="charLabel" destination="G0X-RH-vnM" id="Xx8-B8-50W"/>
                         <outlet property="studyImages" destination="uVu-2z-XkB" id="NM5-Pk-edp"/>
                     </connections>
@@ -583,7 +594,7 @@
                                 <state key="normal" title="Button" image="backIcon"/>
                                 <connections>
                                     <action selector="backButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="bII-BI-AKH"/>
-                                    <segue destination="12Z-Bi-VCn" kind="show" identifier="backToReivew" id="9WK-G1-j3O"/>
+                                    <segue destination="12Z-Bi-VCn" kind="show" identifier="backToReivewPage" id="9WK-G1-j3O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN7-gR-4bV">
@@ -648,9 +659,8 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L51-Dq-xpu"/>
-        <segue reference="5Vc-go-RH4"/>
-        <segue reference="kAP-ev-j2P"/>
+        <segue reference="9WK-G1-j3O"/>
+        <segue reference="P58-em-16R"/>
         <segue reference="F3B-Mw-gTS"/>
         <segue reference="12J-Bb-8bU"/>
     </inferredMetricsTieBreakers>
