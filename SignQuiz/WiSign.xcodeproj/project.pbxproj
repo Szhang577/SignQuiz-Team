@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A8E1EFF235B784A0071A21B /* PictureBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E1EFE235B784A0071A21B /* PictureBank.swift */; };
+		4A8E1F07235C2C990071A21B /* CharsStudyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E1F06235C2C990071A21B /* CharsStudyTableViewController.swift */; };
 		63284A50235C0A3C00E23D6B /* charStudyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63284A4F235C0A3C00E23D6B /* charStudyTableViewCell.swift */; };
 		6371BF76235B58E10088D256 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371BF75235B58E10088D256 /* AppDelegate.swift */; };
 		6371BF78235B58E10088D256 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6371BF77235B58E10088D256 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		4A8E1EFE235B784A0071A21B /* PictureBank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBank.swift; sourceTree = "<group>"; };
+		4A8E1F06235C2C990071A21B /* CharsStudyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharsStudyTableViewController.swift; sourceTree = "<group>"; };
 		63284A4F235C0A3C00E23D6B /* charStudyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charStudyTableViewCell.swift; sourceTree = "<group>"; };
 		6371BF72235B58E10088D256 /* WiSign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiSign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6371BF75235B58E10088D256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				63BD5653235BB5B8006E0C44 /* Variables.swift */,
 				63F6D400235BFCAF00891D15 /* StudyViewController.swift */,
 				63284A4F235C0A3C00E23D6B /* charStudyTableViewCell.swift */,
+				4A8E1F06235C2C990071A21B /* CharsStudyTableViewController.swift */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				63F6D401235BFCAF00891D15 /* StudyViewController.swift in Sources */,
 				4A8E1EFF235B784A0071A21B /* PictureBank.swift in Sources */,
 				A45A496C235B8BBE00ECF36F /* Dictionary.swift in Sources */,
+				4A8E1F07235C2C990071A21B /* CharsStudyTableViewController.swift in Sources */,
 				A45A4968235B75B800ECF36F /* Question.swift in Sources */,
 				63BD564A235B9F40006E0C44 /* ReviewViewController.swift in Sources */,
 				63BD564C235BA088006E0C44 /* EasyViewController.swift in Sources */,
