@@ -9,6 +9,7 @@
 import UIKit
 
 class EasyViewController: UIViewController {
+    var colorChange : Bool = false
     var question = Question(wordType: variables.level, dic: variables.dictionary)
     var timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
     
@@ -92,6 +93,16 @@ class EasyViewController: UIViewController {
                 self.quizImages.image = nil
                 self.quizImages.image = UIImage(named: imgList[imgCount])
                 imgCount = imgCount + 1
+                print("-------%d",timeCount);
+                if (self.colorChange){
+                    self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(222.0/255), blue: CGFloat(191.0/255), alpha:  CGFloat(1))
+                    self.colorChange = !self.colorChange
+                    print(self.colorChange)
+                } else {
+                    self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(213.0/255), blue:  CGFloat(191.0/255), alpha:  CGFloat(1))
+                    self.colorChange = !self.colorChange
+                    print(self.colorChange)
+                }
             }
             
             // finish showing all the images
