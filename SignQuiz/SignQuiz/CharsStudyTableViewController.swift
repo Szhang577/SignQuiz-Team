@@ -44,7 +44,15 @@ class CharsStudyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         variables.goToStudyImage = chars.toImagesFile()[indexPath.row]
+        print(variables.goToStudyImage)
+//        performSegue(withIdentifier: "goToStudyAbroad", sender: self)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+//        performSegue(withIdentifier: "goToStudyAbroad", sender: self)
+    }
+    
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

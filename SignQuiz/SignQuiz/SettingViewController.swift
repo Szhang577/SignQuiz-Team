@@ -1,28 +1,27 @@
 //
-//  GoToStudyViewController.swift
+//  SettingViewController.swift
 //  WiSign
 //
-//  Created by Lingkai Zhao on 10/20/19.
+//  Created by 张斯媛 on 10/20/19.
 //  Copyright © 2019 Siyuan. All rights reserved.
 //
 
 import UIKit
 
-class GoToStudyViewController: UIViewController {
-    
-    //MARK: Properties
-    @IBOutlet weak var studyImages: UIImageView!
-    
+class SettingViewController: UIViewController {
+
+    // MARK: Properties
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(variables.goToStudyImage)
-//        studyImages.image = UIImage(named: variables.goToStudyImage!)
-        
+
         // Do any additional setup after loading the view.
     }
     
-
+    //MARK: Actions
+    @IBAction func speedSetting(_ sender: UITextField) {
+    }
+    
     /*
     // MARK: - Navigation
 
