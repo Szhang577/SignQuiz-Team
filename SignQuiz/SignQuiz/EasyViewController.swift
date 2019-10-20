@@ -72,6 +72,7 @@ class EasyViewController: UIViewController {
     
     func reset(){
         userAnswer.text = ""
+        answerStatus.text = ""
         question = Question(wordType: variables.level, dic: variables.dictionary)
         timer.cancel()
         timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
