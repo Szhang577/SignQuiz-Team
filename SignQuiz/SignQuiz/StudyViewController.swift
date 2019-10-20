@@ -21,6 +21,7 @@ class StudyViewController: UIViewController {
     // MARK: Actions
     
     @IBAction func studyButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "charList", sender: self)
     }
     
     @IBAction func forReviewButton(_ sender: UIButton) {
