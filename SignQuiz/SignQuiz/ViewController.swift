@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func reviewButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "review", sender: self)
+//        performSegue(withIdentifier: "review", sender: self)
     }
     
 }
