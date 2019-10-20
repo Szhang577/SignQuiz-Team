@@ -17,7 +17,8 @@ class ViewController: UIViewController {
 
     //MARK: Actions
     @IBAction func startQuizButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "startQuiz", sender: self)
+//        self.dismiss(animated: false, completion: nil)
+//        performSegue(withIdentifier: "startQuiz", sender: self)
     }
     
     @IBAction func reviewButton(_ sender: UIButton) {
