@@ -9,7 +9,7 @@
 import UIKit
 
 class ReviewViewController: UIViewController {
-    var question = variables.reviewWords.randomElement()
+    var revQue = variables.reviewWords.randomElement()
     var timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
     
     // MARK: properties
@@ -17,8 +17,12 @@ class ReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer.schedule(deadline: .now(), repeating: .milliseconds(500))
-        image_flow()
+        if revQue == nil {
+            
+        }else{
+            timer.schedule(deadline: .now(), repeating: .milliseconds(500))
+            image_flow()
+        }
     }
 
     // MARK: Actions
@@ -28,12 +32,13 @@ class ReviewViewController: UIViewController {
     }
     
     func image_flow(){
+        print(revQue)
         //change image every second
-        let picBank = PictureBank(questionString: question!)
+        let picBank = PictureBank(questionString: revQue!)
         let imgList = picBank.toImagesFile()
         var imgCount = 0
         var timeCount = imgList.count
-        print(question)
+
 
         timer.setEventHandler(handler: {
             // set image to the cur img

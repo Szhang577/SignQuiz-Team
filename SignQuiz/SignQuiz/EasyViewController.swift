@@ -34,13 +34,16 @@ class EasyViewController: UIViewController {
             reset()
         }else{
             answerStatus.text = "That's wrong, \n please try again"
-            variables.reviewWords.append(question.get_question())
+            // add to review word list
+            if !(variables.reviewWords.contains(question.get_question())){
+                variables.reviewWords.append(question.get_question())
+            }
             userAnswer.text = ""
         }
     }
     @IBAction func addToReview(_ sender: UIButton) {
        
-        if (variables.reviewWords.firstIndex(of: question.get_question()) != nil){
+        if (!(variables.reviewWords.contains(question.get_question()))){
             variables.reviewWords.append(question.get_question())
         }
         answerStatus.text = "Added to review, the answer is: " + question.answer
