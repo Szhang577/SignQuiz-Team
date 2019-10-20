@@ -28,7 +28,9 @@ class ReviewViewController: UIViewController {
         view.addGestureRecognizer(edgePan)
         
         timer.schedule(deadline: .now(), repeating: .milliseconds(500))
+        
         if revQue == nil {
+            // there are no review questions
             self.reviewImages.image = nil
             noReviewLabel.text = "There are no questions for review, \n please take quiz first :)"
             removeButton.setTitle("", for: .normal)

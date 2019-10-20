@@ -19,7 +19,7 @@ class PictureBank{
         for char in characters{
             images.append("Images/" + imageBank[Int((char.asciiValue)!)-97])
         }
-    // comment
+
     }
     func getString() -> String{
         return questionString

@@ -9,8 +9,6 @@
 import UIKit
 
 class StartQuizViewController: UIViewController {
-
- 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +28,6 @@ class StartQuizViewController: UIViewController {
     }
     
     //MARK: Actions
-    
-   
-
     @IBAction func easyButton(_ sender: UIButton) {
         variables.level = "easy"
         performSegue(withIdentifier: "quiz", sender: self)

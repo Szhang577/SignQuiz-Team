@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  SignQuiz
-
 //
 //  Created by Yuren Sun, Harry Zhao, Siyuan Zhang on 10/19/19.
 //  Copyright © 2019 Yuren Sun, Harry Zhao, Siyuan Zhang
