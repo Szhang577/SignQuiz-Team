@@ -2,7 +2,7 @@
 
 ![2019MadHackIcon_combine](WiSignIcon/2019MadHackIcon_combine.png)
 
-####Authors: 
+#### Authors: 
 
 Yuren Sun: ysun299@wisc.edu $^{[1]}$
 
@@ -35,7 +35,7 @@ Siyuan Zhang: szhang577@wisc.edu $^{[1]}$
 
 
 
-##What is WiSign
+## What is WiSign
 
 There rapid growing attention to Deaf or Hard of Hearing(DHOH) people. In this way, more people are able to study and use American Sign Language(ASL) than ever before. 
 
@@ -92,9 +92,9 @@ Review part is designed for users to go over words they identified inaccurately 
 
 
 
-###Guide for Study
+### Guide for Study
 
-####Study A - Z
+#### Study A - Z
 
 <img src="WiSignIcon/a-zView.png" alt="a-zView" style="zoom:40%;" />
 
