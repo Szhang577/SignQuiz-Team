@@ -37,21 +37,21 @@ Siyuan Zhang: szhang577@wisc.edu $^{[1]}$
 
 ## What is WiSign
 
-There rapid growing attention to Deaf or Hard of Hearing(DHOH) people. In this way, more people are able to study and use American Sign Language(ASL) than ever before. 
+There rapid growing attention to Deaf or Hard of Hearing(DHOH) people. In this way, more people can study and use American Sign Language(ASL) than ever before. 
 
-There are many applications focusing on learning the ASL now. However, few of them aimed at testing how users learn fingerspelling in ASL and improve their learning based on the results of the quizzes.
+Many applications are focusing on learning the ASL now. However, few of them aimed at testing how users learn to fingerspell in ASL and improve their learning based on the results of the quizzes.
 
-With this goal in mind, we developed WiSign. This is an iOS application that helps ASL users and learners get start with ASL by learning basic 26 alphabets, know how they decode fingerspelling in ASL by taking quizzes, and familiar them with fingerspelling more through reviewing.
+With this goal in mind, we developed WiSign. This is an iOS application that helps ASL users and learners get start with ASL by learning basic 26 alphabets, know how they decode fingerspelling in ASL by taking quizzes, and familiarize them with fingerspelling more thorough review.
 
 
 
 ## The Icon of WiSign
 
-Our icon is made of 2 symmetric "I love you" sign in ASL.  This sign combines the American fingerspelled letters I , L, and Y.
+Our icon is made of 2 symmetric "I love you" sign in ASL. This sign combines the American fingerspelled letters I, L, and Y.
 
 ![icon_single](WiSignIcon/icon_single.png)
 
-We are from University of Wisconsin - Madison. We have the tradition to make "W" to show our pride for being a badger! This is the reason why we use two sign reflected, inverted, and combined to make it into an "W" in the middle. 
+We are from the University of Wisconsin - Madison. We have the tradition to make "W" showing our pride for being a badger! This is the reason why we use two sign reflected, inverted, and combined to make it into a "W" in the middle. 
 
 <img src="WiSignIcon/2019MadHackIcon.png" alt="2019MadHackIcon" style="zoom:10%;" />
 
@@ -84,19 +84,23 @@ Review part is designed for users to go over words they identified inaccurately 
 
 
 
+<div style="page-break-after: always;"></div>
+
  ## User Guide
 
 ### Guide for Quiz
 
 <img src="WiSignIcon/quizView.png" alt="quizView" style="zoom: 40%;" />
 
-
+<div style="page-break-after: always;"></div>
 
 ### Guide for Study
 
 #### Study A - Z
 
 <img src="WiSignIcon/a-zView.png" alt="a-zView" style="zoom:40%;" />
+
+<div style="page-break-after: always;"></div>
 
 #### Review
 
