@@ -33,6 +33,11 @@ class ReviewViewController: UIViewController {
     }
     @IBAction func repeatButton(_ sender: UIButton) {
     }
+    @IBAction func backButton(_ sender: UIButton) {
+//        performSegue(withIdentifier: "backToReview", sender: self)
+    }
+    @IBAction func nextButton(_ sender: UIButton) {
+    }
     
     func image_flow(){
         print(revQue)

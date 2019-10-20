@@ -451,6 +451,10 @@
                                 <rect key="frame" x="20" y="797" width="55" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="backIcon"/>
+                                <connections>
+                                    <action selector="backButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="bII-BI-AKH"/>
+                                    <segue destination="12Z-Bi-VCn" kind="show" identifier="backToReivew" id="9WK-G1-j3O"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vN7-gR-4bV">
                                 <rect key="frame" x="0.0" y="499" width="414" height="248"/>
@@ -468,6 +472,9 @@
                                 <rect key="frame" x="339" y="797" width="55" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="nextIcon"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="L52-jf-41T"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0p9-Pf-knO">
                                 <rect key="frame" x="182" y="441" width="50" height="50"/>
@@ -477,11 +484,11 @@
                                     <action selector="repeatButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="oT9-w5-VFD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2D-8i-DaA">
-                                <rect key="frame" x="182" y="239" width="91" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2D-8i-DaA">
+                                <rect key="frame" x="20" y="229" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -509,6 +516,7 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9WK-G1-j3O"/>
         <segue reference="F3B-Mw-gTS"/>
     </inferredMetricsTieBreakers>
 </document>
