@@ -60,7 +60,7 @@ class EasyViewController: UIViewController {
         if (!(variables.reviewWords.contains(question.get_question()))){
             variables.reviewWords.append(question.get_question())
         }
-        answerStatus.text = "Added to review, the answer is: " + question.answer
+        answerStatus.text = "Added to review, \n the answer is: " + question.answer
     }
     
     
