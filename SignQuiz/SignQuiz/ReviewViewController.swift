@@ -20,7 +20,7 @@ class ReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if revQue == nil {
-            noReviewLabel.text = "There are no questions for review, \n please take quiz first :)"
+            noReviewLabel.text = "There are no questions for review,\n\nplease take quiz first\n:)"
         }else{
             timer.schedule(deadline: .now(), repeating: .milliseconds(500))
             image_flow()

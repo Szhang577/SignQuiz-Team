@@ -27,5 +27,7 @@ class StudyViewController: UIViewController {
     @IBAction func forReviewButton(_ sender: UIButton) {
 //        performSegue(withIdentifier: "reviewList", sender: self)
     }
+    @IBAction func backToHomeButton(_ sender: UIButton) {
+    }
     
 }

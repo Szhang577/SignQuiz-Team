@@ -204,7 +204,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4G-pa-nKT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4G-pa-nKT">
                                 <rect key="frame" x="20" y="44" width="179" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="179" id="xye-kO-uJK"/>
@@ -328,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBU-78-lPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844.9275362318842" y="-212.27678571428569"/>
+            <point key="canvasLocation" x="1720" y="-212"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="0Wm-Ec-dL1">
@@ -380,10 +380,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-kC-7fc">
-                                <rect key="frame" x="95" y="258" width="224" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-kC-7fc">
+                                <rect key="frame" x="95" y="319" width="224" height="80"/>
                                 <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="224" id="gqo-ll-5iE"/>
+                                    <constraint firstAttribute="height" constant="80" id="vqD-Vc-c4h"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
                                 <state key="normal" title="Study A-Z">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -393,10 +396,21 @@
                                     <segue destination="56C-il-3wy" kind="show" identifier="charList" id="kAP-ev-j2P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-tj-b6U">
-                                <rect key="frame" x="95" y="489" width="224" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCY-Aw-owa">
+                                <rect key="frame" x="20" y="797" width="55" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="red_backIcon"/>
+                                <connections>
+                                    <action selector="backToHomeButton:" destination="12Z-Bi-VCn" eventType="touchUpInside" id="TIS-jb-WZL"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToOriginalHome" id="72r-Il-dNV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-tj-b6U">
+                                <rect key="frame" x="95" y="459" width="224" height="80"/>
                                 <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="LIP-3X-DL6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
                                 <state key="normal" title="Review">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -408,6 +422,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91580587629999999" green="0.83644396070000004" blue="0.74806898830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iPW-tj-b6U" firstAttribute="top" secondItem="8Bo-kC-7fc" secondAttribute="bottom" constant="60" id="8aS-n1-hkg"/>
+                            <constraint firstItem="iPW-tj-b6U" firstAttribute="centerX" secondItem="3YE-0Q-PeU" secondAttribute="centerX" id="CUp-gw-UiD"/>
+                            <constraint firstItem="h6e-aD-e2f" firstAttribute="trailing" secondItem="iPW-tj-b6U" secondAttribute="trailing" constant="95" id="Ktc-xZ-9fd"/>
+                            <constraint firstItem="iPW-tj-b6U" firstAttribute="leading" secondItem="8Bo-kC-7fc" secondAttribute="leading" id="YWC-tr-RaD"/>
+                            <constraint firstItem="8Bo-kC-7fc" firstAttribute="top" secondItem="h6e-aD-e2f" secondAttribute="top" constant="275" id="bpc-Hf-uj8"/>
+                            <constraint firstItem="8Bo-kC-7fc" firstAttribute="leading" secondItem="h6e-aD-e2f" secondAttribute="leading" constant="95" id="cAD-4o-oAI"/>
+                            <constraint firstItem="h6e-aD-e2f" firstAttribute="trailing" secondItem="8Bo-kC-7fc" secondAttribute="trailing" constant="95" id="gHl-ls-3cW"/>
+                            <constraint firstItem="h6e-aD-e2f" firstAttribute="bottom" secondItem="iPW-tj-b6U" secondAttribute="bottom" constant="323" id="jKN-Je-011"/>
+                            <constraint firstItem="iPW-tj-b6U" firstAttribute="trailing" secondItem="8Bo-kC-7fc" secondAttribute="trailing" id="qwR-Wq-sYD"/>
+                            <constraint firstItem="iPW-tj-b6U" firstAttribute="leading" secondItem="h6e-aD-e2f" secondAttribute="leading" constant="95" id="yBu-PC-inV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h6e-aD-e2f"/>
                     </view>
                 </viewController>
@@ -440,7 +466,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.60784313725490191" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
-                                <state key="normal" title="Remove">
+                                <state key="normal">
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -484,10 +510,10 @@
                                     <action selector="repeatButton:" destination="UFB-H9-dAh" eventType="touchUpInside" id="oT9-w5-VFD"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2D-8i-DaA">
-                                <rect key="frame" x="20" y="229" width="374" height="34"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2D-8i-DaA">
+                                <rect key="frame" x="20" y="177" width="374" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="30"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
                                 <color key="textColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -516,7 +542,8 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9WK-G1-j3O"/>
+        <segue reference="epR-W9-gTO"/>
         <segue reference="F3B-Mw-gTS"/>
+        <segue reference="72r-Il-dNV"/>
     </inferredMetricsTieBreakers>
 </document>
