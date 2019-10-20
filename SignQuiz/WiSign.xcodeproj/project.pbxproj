@@ -84,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				6371BF74235B58E10088D256 /* SignQuiz */,
-				6371BF89235B58E10088D256 /* SignQuizTests */,
 				6371BF73235B58E10088D256 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 				63F6D400235BFCAF00891D15 /* StudyViewController.swift */,
 				63284A4F235C0A3C00E23D6B /* charStudyTableViewCell.swift */,
 				4A8E1F06235C2C990071A21B /* CharsStudyTableViewController.swift */,
+				6371BF89235B58E10088D256 /* SignQuizTests */,
 			);
 			path = SignQuiz;
 			sourceTree = "<group>";
