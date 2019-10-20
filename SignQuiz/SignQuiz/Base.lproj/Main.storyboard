@@ -111,8 +111,7 @@
                                     <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="easyButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="B4q-vI-byR"/>
-                                    <segue destination="N84-WQ-iwt" kind="show" identifier="quiz" id="aIi-wp-hDR"/>
+                                    <action selector="easyButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="uat-7w-fuH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UZ-je-wrN">
@@ -129,6 +128,7 @@
                                 </state>
                                 <connections>
                                     <action selector="normalButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="shg-YK-Tpj"/>
+                                    <segue destination="N84-WQ-iwt" kind="show" identifier="quiz" id="L51-Dq-xpu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abm-ar-Ceg">
@@ -164,9 +164,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiX-WV-dbb">
-                                <rect key="frame" x="42" y="784" width="61" height="57"/>
+                                <rect key="frame" x="20" y="797" width="55" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backIcon"/>
+                                <state key="normal" image="red_backIcon"/>
                                 <connections>
                                     <action selector="backToHomeButton:" destination="TIe-Hq-ZFl" eventType="touchUpInside" id="jHk-4w-Evc"/>
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="backToHome" id="12J-Bb-8bU"/>
@@ -331,6 +331,34 @@
             </objects>
             <point key="canvasLocation" x="1844.9275362318842" y="-212.27678571428569"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="0Wm-Ec-dL1">
+            <objects>
+                <tableViewController id="56C-il-3wy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3uz-LO-EB6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="90" id="ugS-OV-Rg3" customClass="charStudyTableViewCell" customModule="WiSign" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ugS-OV-Rg3" id="obD-PG-7oW">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="56C-il-3wy" id="nhv-ul-25w"/>
+                            <outlet property="delegate" destination="56C-il-3wy" id="Xpx-mn-PeP"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vI0-Ql-Ogf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-653" y="491"/>
+        </scene>
         <!--Study View Controller-->
         <scene sceneID="W03-7S-4dO">
             <objects>
@@ -340,17 +368,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bo-kC-7fc">
-                                <rect key="frame" x="127" y="251" width="126" height="30"/>
+                                <rect key="frame" x="95" y="258" width="224" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="Study A-Z">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="studyButton:" destination="12Z-Bi-VCn" eventType="touchUpInside" id="7Dd-dr-1QK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPW-tj-b6U">
-                                <rect key="frame" x="167" y="451" width="46" height="30"/>
+                                <rect key="frame" x="95" y="489" width="224" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" red="0.7725490196" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <state key="normal" title="Review">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="forReviewButton:" destination="12Z-Bi-VCn" eventType="touchUpInside" id="Vgx-EL-u2u"/>
                                     <segue destination="UFB-H9-dAh" kind="show" identifier="reviewList" id="3IR-of-olZ"/>
@@ -408,14 +444,16 @@
     </scenes>
     <resources>
         <image name="SettingIcon" width="500" height="500"/>
-        <image name="backIcon" width="100" height="100"/>
+        <image name="backIcon" width="500" height="500"/>
         <image name="enterKeyIcon" width="500" height="500"/>
         <image name="flagIcon" width="256" height="256"/>
         <image name="nextIcon" width="500" height="500"/>
-        <image name="repeatIcon" width="256" height="256"/>
+        <image name="red_backIcon" width="500" height="500"/>
+        <image name="repeatIcon" width="500" height="500"/>
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="L51-Dq-xpu"/>
         <segue reference="F3B-Mw-gTS"/>
     </inferredMetricsTieBreakers>
 </document>

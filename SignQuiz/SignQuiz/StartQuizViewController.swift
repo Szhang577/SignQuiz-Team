@@ -21,6 +21,7 @@ class StartQuizViewController: UIViewController {
     //MARK: Actions
     
    
+
     @IBAction func easyButton(_ sender: UIButton) {
         variables.level = "easy"
         performSegue(withIdentifier: "quiz", sender: self)
@@ -28,7 +29,7 @@ class StartQuizViewController: UIViewController {
     
     @IBAction func normalButton(_ sender: UIButton) {
         variables.level = "normal"
-        performSegue(withIdentifier: "quiz", sender: self)
+//        performSegue(withIdentifier: "quiz", sender: self)
     }
     
     
