@@ -522,7 +522,9 @@
                         <viewLayoutGuide key="safeArea" id="4pC-gt-Jke"/>
                     </view>
                     <connections>
+                        <outlet property="answerButton" destination="vN7-gR-4bV" id="sgd-b4-RHb"/>
                         <outlet property="noReviewLabel" destination="M2D-8i-DaA" id="LI3-Kl-2KX"/>
+                        <outlet property="removeButton" destination="aKF-GU-6sr" id="1TN-bU-UrE"/>
                         <outlet property="reviewImages" destination="O7y-V4-ljp" id="4pG-6B-GlH"/>
                     </connections>
                 </viewController>
@@ -542,7 +544,7 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="epR-W9-gTO"/>
+        <segue reference="9WK-G1-j3O"/>
         <segue reference="F3B-Mw-gTS"/>
         <segue reference="72r-Il-dNV"/>
     </inferredMetricsTieBreakers>
