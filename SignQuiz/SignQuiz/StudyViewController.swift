@@ -2,8 +2,8 @@
 //  StudyViewController.swift
 //  WiSign
 //
-//  Created by 张斯媛 on 10/19/19.
-//  Copyright © 2019 Siyuan. All rights reserved.
+//  Created by Yuren Sun, Harry Zhao, Siyuan Zhang on 10/19/19.
+//  Copyright © 2019 Yuren Sun, Harry Zhao, Siyuan Zhang
 //
 
 import UIKit

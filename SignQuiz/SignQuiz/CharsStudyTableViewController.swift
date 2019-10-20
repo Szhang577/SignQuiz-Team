@@ -2,8 +2,8 @@
 //  CharsStudyTableViewController.swift
 //  WiSign
 //
-//  Created by Lingkai Zhao on 10/20/19.
-//  Copyright © 2019 Siyuan. All rights reserved.
+//  Created by Yuren Sun, Harry Zhao, Siyuan Zhang on 10/19/19.
+//  Copyright © 2019 Yuren Sun, Harry Zhao, Siyuan Zhang
 //
 
 import UIKit
