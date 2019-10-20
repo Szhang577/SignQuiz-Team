@@ -648,6 +648,7 @@
         <image name="welcomeLogo" width="1731" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="L51-Dq-xpu"/>
         <segue reference="5Vc-go-RH4"/>
         <segue reference="kAP-ev-j2P"/>
         <segue reference="F3B-Mw-gTS"/>

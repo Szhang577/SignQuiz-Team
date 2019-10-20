@@ -57,7 +57,7 @@ class StartQuizViewController: UIViewController {
     
     @IBAction func backToHomeButton(_ sender: UIButton) {
         self.dismiss(animated: false, completion: nil)
-//        performSegue(withIdentifier: "backToHome", sender: self)
+        performSegue(withIdentifier: "backToHome", sender: self)
     }
     
    
