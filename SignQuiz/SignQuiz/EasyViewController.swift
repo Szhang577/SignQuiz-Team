@@ -34,13 +34,16 @@ class EasyViewController: UIViewController {
             reset()
         }else{
             answerStatus.text = "That's wrong, \n please try again"
-            variables.reviewWords.append(question.get_question())
+            // add to review word list
+            if !(variables.reviewWords.contains(question.get_question())){
+                variables.reviewWords.append(question.get_question())
+            }
             userAnswer.text = ""
         }
     }
     @IBAction func addToReview(_ sender: UIButton) {
        
-        if (variables.reviewWords.firstIndex(of: question.get_question()) != nil){
+        if (!(variables.reviewWords.contains(question.get_question()))){
             variables.reviewWords.append(question.get_question())
         }
         answerStatus.text = "Added to review, the answer is: " + question.answer
@@ -69,6 +72,7 @@ class EasyViewController: UIViewController {
     
     func reset(){
         userAnswer.text = ""
+        answerStatus.text = ""
         question = Question(wordType: variables.level, dic: variables.dictionary)
         timer.cancel()
         timer = DispatchSource.makeTimerSource(queue: DispatchQueue.global())
@@ -93,7 +97,7 @@ class EasyViewController: UIViewController {
                 self.quizImages.image = nil
                 self.quizImages.image = UIImage(named: imgList[imgCount])
                 imgCount = imgCount + 1
-                print("-------%d",timeCount);
+                
                 if (self.colorChange){
                     self.view.backgroundColor = UIColor(red: CGFloat(234.0/255), green:  CGFloat(222.0/255), blue: CGFloat(191.0/255), alpha:  CGFloat(1))
                     self.colorChange = !self.colorChange
