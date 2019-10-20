@@ -16,12 +16,24 @@ class CharsStudyTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .left
+        
+        view.addGestureRecognizer(edgePan)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
+    @objc func screenEdgeSwiped(_ recognizer: UIScreenEdgePanGestureRecognizer){
+        if recognizer.state == .recognized{
+            recognizer.state = .ended
+            performSegue(withIdentifier: "backToReview", sender: self)
+        }
     }
 
     // MARK: - Table view data source
@@ -39,19 +51,24 @@ class CharsStudyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chars", for: indexPath)
         cell.textLabel?.text = String(characters[indexPath.row])
+        cell.textLabel?.textAlignment = .center
+        cell.textLabel?.textColor = UIColor(red: CGFloat(197.0/255), green:  CGFloat(5.0/255), blue:  CGFloat(12.0/255), alpha:  CGFloat(1))
+        cell.textLabel?.font = UIFont(name: "Courier New", size: 30)
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        variables.goToStudyImage = chars.toImagesFile()[indexPath.row]
-        print(variables.goToStudyImage)
-//        performSegue(withIdentifier: "goToStudyAbroad", sender: self)
+            
+            variables.goToStudyImage = chars.toImagesFile()[indexPath.row]
+
+   
+        
+        performSegue(withIdentifier: "goToStudyAbroad", sender: self)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    
-//        performSegue(withIdentifier: "goToStudyAbroad", sender: self)
-    }
+
     
 
     /*

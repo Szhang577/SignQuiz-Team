@@ -12,8 +12,18 @@ class StudyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .left
+        
+        view.addGestureRecognizer(edgePan)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func screenEdgeSwiped(_ recognizer: UIScreenEdgePanGestureRecognizer){
+        if recognizer.state == .recognized{
+            recognizer.state = .ended
+            performSegue(withIdentifier: "backToOriginalHome", sender: self)
+        }
     }
     
 

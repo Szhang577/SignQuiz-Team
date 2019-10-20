@@ -22,6 +22,11 @@ class ReviewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
+        edgePan.edges = .left
+        
+        view.addGestureRecognizer(edgePan)
+        
         timer.schedule(deadline: .now(), repeating: .milliseconds(500))
         if revQue == nil {
             self.reviewImages.image = nil
@@ -33,6 +38,13 @@ class ReviewViewController: UIViewController {
             answerButton.setTitle("Click to see Answer", for: .normal)
             image_flow()
             
+        }
+    }
+    
+    @objc func screenEdgeSwiped(_ recognizer: UIScreenEdgePanGestureRecognizer){
+        if recognizer.state == .recognized{
+            recognizer.state = .ended
+            performSegue(withIdentifier: "backToReview", sender: self)
         }
     }
 
