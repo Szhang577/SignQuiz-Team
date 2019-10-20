@@ -84,8 +84,7 @@ Review part is designed for users to go over words they identified inaccurately 
 
 
 
-<div style="page-break-after: always;"></div>
-## User Guide
+ ## User Guide
 
 ### Guide for Quiz
 
@@ -99,14 +98,10 @@ Review part is designed for users to go over words they identified inaccurately 
 
 <img src="WiSignIcon/a-zView.png" alt="a-zView" style="zoom:40%;" />
 
-<div style="page-break-after: always;"></div>
 #### Review
 
 <img src="WiSignIcon/reviewView.png" alt="reviewView" style="zoom:40%;" />
 
-
-
-<div style="page-break-after: always;"></div>
 ## Future Plan
 
 Since this application is developed during Madhack within less than 24 hours, some functions are not fully developed. In the future, we hope to fulfill following plans：
