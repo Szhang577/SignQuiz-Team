@@ -12,6 +12,7 @@ struct variables{
     static var level = ""
     static var dictionary = Dictionary()
     static var reviewWords : [String] = []
+    static var goToStudyImage : String?
     
 }
 

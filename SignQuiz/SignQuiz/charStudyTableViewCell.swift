@@ -21,7 +21,5 @@ class charStudyTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-    @IBAction func aButton(_ sender: UIButton) {
-    }
+    
 }

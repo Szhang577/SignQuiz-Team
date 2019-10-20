@@ -11,6 +11,8 @@ import UIKit
 class CharsStudyTableViewController: UITableViewController {
     var characters : [Character] = Array("ABCDEFGHIGKLMNOPQRSTUVWXYZ")
     var chars = PictureBank(questionString: "ABCDEFGHIGKLMNOPQRSTUVWXYZ")
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,10 @@ class CharsStudyTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "chars", for: indexPath)
         cell.textLabel?.text = String(characters[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        variables.goToStudyImage = chars.toImagesFile()[indexPath.row]
     }
 
     /*
